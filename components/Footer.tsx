@@ -8,8 +8,7 @@ export function Footer() {
   return (
     <footer className="bg-navy text-cream">
       <div className="container-wide py-16">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
-          {/* Brand */}
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-6">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
               <ShieldCheck className="h-7 w-7 text-gold" strokeWidth={2.5} />
@@ -43,100 +42,57 @@ export function Footer() {
             </div>
           </div>
 
-          {/* For Homeowners */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
-              For Homeowners
+              Solutions
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li>
-                <Link href="/plans" className="text-cream/80 hover:text-cream">
-                  Plans &amp; Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/features" className="text-cream/80 hover:text-cream">
-                  Features
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-cream/80 hover:text-cream">
-                  Get a Quote
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-cream/80 hover:text-cream">
-                  About Halstead
-                </Link>
-              </li>
+              <li><Link href="/solutions/home-security" className="text-cream/80 hover:text-cream">Home Security</Link></li>
+              <li><Link href="/solutions/business-security" className="text-cream/80 hover:text-cream">Business</Link></li>
+              <li><Link href="/solutions/multifamily" className="text-cream/80 hover:text-cream">Multifamily</Link></li>
+              <li><Link href="/solutions/short-term-rental" className="text-cream/80 hover:text-cream">Short-Term Rentals</Link></li>
+              <li><Link href="/solutions/construction-site" className="text-cream/80 hover:text-cream">Construction</Link></li>
+              <li><Link href="/industries" className="text-cream/80 hover:text-cream">All Industries →</Link></li>
             </ul>
           </div>
 
-          {/* For Operators */}
+          <div>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
+              For Customers
+            </h3>
+            <ul className="mt-4 space-y-3 text-sm">
+              <li><Link href="/plans" className="text-cream/80 hover:text-cream">Plans &amp; Pricing</Link></li>
+              <li><Link href="/features" className="text-cream/80 hover:text-cream">Features</Link></li>
+              <li><Link href="/compare" className="text-cream/80 hover:text-cream">Compare</Link></li>
+              <li><Link href="/resources" className="text-cream/80 hover:text-cream">Resources</Link></li>
+              <li><Link href="/contact" className="text-cream/80 hover:text-cream">Get a Quote</Link></li>
+            </ul>
+          </div>
+
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
               For Operators
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li>
-                <Link href="/dealer" className="text-cream/80 hover:text-cream">
-                  Become a Dealer
-                </Link>
-              </li>
-              <li>
-                <Link href="/dealer/faq" className="text-cream/80 hover:text-cream">
-                  Dealer FAQ
-                </Link>
-              </li>
-              <li>
-                <Link href="/dealer/apply" className="text-cream/80 hover:text-cream">
-                  Apply Now
-                </Link>
-              </li>
-              <li>
-                <Link href="/white-label" className="text-cream/80 hover:text-cream">
-                  White-Label Platform
-                </Link>
-              </li>
+              <li><Link href="/dealer" className="text-cream/80 hover:text-cream">Become a Dealer</Link></li>
+              <li><Link href="/dealer/faq" className="text-cream/80 hover:text-cream">Dealer FAQ</Link></li>
+              <li><Link href="/dealer/apply" className="text-cream/80 hover:text-cream">Apply Now</Link></li>
+              <li><Link href="/white-label" className="text-cream/80 hover:text-cream">White-Label</Link></li>
             </ul>
           </div>
 
-          {/* Service Areas */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
               Service Areas
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              <li>
-                <Link href="/states/texas" className="text-cream/80 hover:text-cream">
-                  Texas
-                </Link>
-              </li>
-              <li>
-                <Link href="/cities/corpus-christi" className="text-cream/80 hover:text-cream">
-                  Corpus Christi
-                </Link>
-              </li>
-              <li>
-                <Link href="/cities/houston" className="text-cream/80 hover:text-cream">
-                  Houston
-                </Link>
-              </li>
-              <li>
-                <Link href="/cities/san-antonio" className="text-cream/80 hover:text-cream">
-                  San Antonio
-                </Link>
-              </li>
-              <li>
-                <Link href="/cities/austin" className="text-cream/80 hover:text-cream">
-                  Austin
-                </Link>
-              </li>
-              <li>
-                <Link href="/cities/dallas" className="text-cream/80 hover:text-cream">
-                  Dallas
-                </Link>
-              </li>
+              <li><Link href="/states/texas" className="text-cream/80 hover:text-cream">Texas</Link></li>
+              <li><Link href="/cities/corpus-christi" className="text-cream/80 hover:text-cream">Corpus Christi</Link></li>
+              <li><Link href="/cities/houston" className="text-cream/80 hover:text-cream">Houston</Link></li>
+              <li><Link href="/cities/san-antonio" className="text-cream/80 hover:text-cream">San Antonio</Link></li>
+              <li><Link href="/cities/austin" className="text-cream/80 hover:text-cream">Austin</Link></li>
+              <li><Link href="/cities/dallas" className="text-cream/80 hover:text-cream">Dallas</Link></li>
+              <li><Link href="/about" className="text-cream/80 hover:text-cream">About Halstead</Link></li>
             </ul>
           </div>
         </div>

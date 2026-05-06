@@ -6,11 +6,12 @@ import { useState, useEffect } from "react";
 import { Menu, X, ShieldCheck } from "lucide-react";
 
 const navLinks = [
-  { href: "/plans", label: "Plans" },
+  { href: "/solutions", label: "Solutions" },
   { href: "/features", label: "Features" },
+  { href: "/plans", label: "Plans" },
+  { href: "/compare", label: "Compare" },
   { href: "/dealer", label: "Become a Dealer" },
-  { href: "/white-label", label: "White-Label" },
-  { href: "/about", label: "About" },
+  { href: "/resources", label: "Resources" },
 ];
 
 export function Header() {
