@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-navy antialiased;
+    font-feature-settings: "ss01", "ss02";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif tracking-tight;
+  }
+
+  a {
+    @apply transition-colors;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply mx-auto max-w-4xl px-6;
+  }
+
+  .container-wide {
+    @apply mx-auto max-w-7xl px-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-navy px-6 py-3 font-sans font-medium text-cream transition-all hover:bg-navy-700 hover:shadow-lg;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md border-2 border-navy bg-transparent px-6 py-3 font-sans font-medium text-navy transition-all hover:bg-navy hover:text-cream;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-md bg-gold px-6 py-3 font-sans font-medium text-navy transition-all hover:bg-gold-600 hover:shadow-lg;
+  }
+
+  .heading-display {
+    @apply font-serif text-4xl font-semibold leading-tight text-navy md:text-5xl lg:text-6xl;
+  }
+
+  .heading-section {
+    @apply font-serif text-3xl font-semibold text-navy md:text-4xl;
+  }
+
+  .heading-subsection {
+    @apply font-serif text-2xl font-semibold text-navy md:text-3xl;
+  }
+
+  .body-large {
+    @apply font-sans text-lg leading-relaxed text-navy/80 md:text-xl;
+  }
+
+  .body-base {
+    @apply font-sans text-base leading-relaxed text-navy/80;
+  }
+
+  .eyebrow {
+    @apply font-sans text-sm font-medium uppercase tracking-widest text-gold;
+  }
+}

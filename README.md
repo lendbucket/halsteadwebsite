@@ -1,57 +1,72 @@
 # Halstead Security — Marketing Site
 
-Public-facing marketing website for Halstead Security and the Halstead dealer/franchise program.
-
-## What this site does
-
-Three audiences, three primary CTAs:
-
-1. **Homeowners** — sells the consumer product (cameras + monthly service). CTA: "Get a Quote" / "See Plans".
-2. **Prospective dealers** — sells the dealership opportunity. CTA: "Apply to be a Dealer".
-3. **Prospective white-label partners** — sells the white-label platform. CTA: "Schedule a Demo".
+Next.js 14 marketing site for Halstead Security. Deploys automatically to Vercel on push.
 
 ## Stack
 
-- Next.js 15 (App Router)
-- Tailwind CSS
-- shadcn/ui components
-- MDX for content
-- Vercel hosting
-- Resend or SendGrid for form submissions
-- Plausible or PostHog for analytics
+- Next.js 14 with App Router
+- TypeScript
+- Tailwind CSS with Halstead brand colors
+- Lucide icons
+- React 18
 
-## Repo structure
+## Pages
 
+- `/` — Home (hero + value prop + dual CTA)
+- `/plans` — Pricing tiers + hardware + comparison
+- `/features` — Smart features deep dive
+- `/dealer` — $15K founding dealer pitch
+- `/dealer/faq` — Detailed dealer questions
+- `/white-label` — Premium tier for established operators
+- `/about` — Company story + Reyna ecosystem
+- `/contact` — Multi-purpose form (customer/dealer/partner)
+- `/api/lead` — Form submission endpoint
+
+## Local development
+
+```bash
+npm install
+npm run dev
 ```
-halstead-marketing/
-├── content/
-│   ├── pages/        # MDX page content
-│   ├── features/     # Per-feature marketing pages
-│   ├── states/       # Per-state landing pages (SEO)
-│   └── blog/         # Blog posts
-├── docs/
-│   ├── ROADMAP.md    # Marketing site phases
-│   ├── PAGES.md      # Page inventory
-│   └── COPY.md       # Brand voice & copy guidelines
-└── README.md
-```
 
-## Page inventory (V1)
+Site runs at http://localhost:3000
 
-- Home `/`
-- Why Halstead `/why`
-- Plans & Pricing `/plans`
-- Equipment `/equipment`
-- Become a Dealer `/dealer`
-- White-Label Platform `/white-label`
-- About `/about`
-- Contact `/contact`
-- FAQ `/faq`
-- Privacy `/privacy`
-- Terms `/terms`
+## Brand colors
 
-## Status
+- Navy `#0F1B2D` — primary
+- Gold `#C9A547` — accent
+- Cream `#F4F1EA` — supporting
+- Forest `#2F5233` — success
+- Burgundy `#7A1F1F` — error
 
-Phase: 0 — content planning before code
+## Typography
 
-See `docs/ROADMAP.md` for the marketing buildout plan.
+- Source Serif 4 — headings (heritage feel)
+- Inter — body (modern readable)
+
+## Form submissions
+
+The `/api/lead` endpoint currently logs to Vercel logs. To wire up real email
+delivery, add `RESEND_API_KEY` to env vars and uncomment the Resend code in
+`app/api/lead/route.ts`.
+
+## Deployment
+
+Vercel auto-deploys on push to `main`. Preview deploys on every PR.
+
+## Roadmap
+
+See `../docs/ROADMAP.md` (in the parent doc folder) for the marketing site
+roadmap and `../content/INDEX.md` for content inventory.
+
+Coming in Phase 2:
+- Per-state landing pages (SEO)
+- Per-city local SEO pages
+- Blog
+- Customer testimonials
+- Live chat widget
+- Quote calculator
+
+## License
+
+Proprietary. All rights reserved.
