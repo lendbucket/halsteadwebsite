@@ -1,19 +1,22 @@
 import { NextResponse } from "next/server";
 
-// This is a minimal lead capture endpoint for v1.
-// In production, this should:
-//   1. Send an email to the team via Resend or SendGrid
-//   2. Push the lead to Airtable / your CRM of choice
-//   3. Trigger a Slack notification for fast response
-//
-// For now, it just logs and returns success. Replace with real wiring
-// once you have RESEND_API_KEY or AIRTABLE credentials in env.
+/**
+ * Lead capture endpoint.
+ *
+ * Currently logs to Vercel logs. To wire up real email delivery:
+ *
+ *   1. Sign up for Resend at https://resend.com (free tier: 3,000/month)
+ *   2. Add RESEND_API_KEY to Vercel env vars
+ *   3. Uncomment the Resend block below
+ *
+ * Or push to Airtable using the AIRTABLE_API_KEY env var
+ * (Robert's Airtable MCP is already connected).
+ */
 
 export async function POST(req: Request) {
   try {
     const data = await req.json();
 
-    // Basic validation
     if (!data.email || !data.name) {
       return NextResponse.json(
         { error: "Missing required fields" },
@@ -21,28 +24,27 @@ export async function POST(req: Request) {
       );
     }
 
-    // Log to Vercel logs for now
+    // Log to Vercel logs (visible at https://vercel.com/.../logs)
     console.log("[LEAD]", {
       timestamp: new Date().toISOString(),
       type: data.type,
-      name: data.name,
-      email: data.email,
-      phone: data.phone,
-      location: data.location,
-      message: data.message,
+      ...data,
     });
 
-    // TODO: Replace with real email/CRM wiring
-    // Example with Resend:
+    // Production wiring (uncomment when env vars are set):
     //
-    // const { Resend } = await import("resend");
-    // const resend = new Resend(process.env.RESEND_API_KEY);
-    // await resend.emails.send({
-    //   from: "leads@halsteadsecurity.com",
-    //   to: "robert@halsteadsecurity.com",
-    //   subject: `New ${data.type} lead: ${data.name}`,
-    //   text: JSON.stringify(data, null, 2),
-    // });
+    // if (process.env.RESEND_API_KEY) {
+    //   const { Resend } = await import("resend");
+    //   const resend = new Resend(process.env.RESEND_API_KEY);
+    //   await resend.emails.send({
+    //     from: "Halstead Leads <leads@halsteadsecurity.com>",
+    //     to: process.env.NOTIFY_EMAIL || "robert@halsteadsecurity.com",
+    //     subject: `New ${data.type} lead: ${data.name}`,
+    //     text: Object.entries(data)
+    //       .map(([k, v]) => `${k}: ${v}`)
+    //       .join("\n"),
+    //   });
+    // }
 
     return NextResponse.json({ ok: true });
   } catch (error) {

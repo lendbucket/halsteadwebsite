@@ -1,9 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "About",
+export const metadata: Metadata = {
+  title: "About Halstead Security",
   description:
-    "Halstead Security is built on the trust customers used to give to companies their parents used. Heritage trade brand for the modern home.",
+    "Halstead Security is a national home security brand operated through a network of independent local dealers. Heritage trade brand for the modern home, founded by Robert Reyna in Corpus Christi, Texas.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {
@@ -12,7 +14,9 @@ export default function AboutPage() {
       <section className="bg-cream py-20 md:py-28">
         <div className="container-narrow">
           <p className="eyebrow">About</p>
-          <h1 className="heading-display mt-4">A real security company.</h1>
+          <h1 className="heading-hero mt-4 text-balance">
+            A real security company.
+          </h1>
           <p className="body-large mt-6">
             Halstead Security is built on a simple idea: the security industry
             got too big and too automated to remember that customers want to
@@ -22,7 +26,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-cream pb-20">
-        <div className="container-narrow space-y-6 font-sans text-lg leading-relaxed text-navy/80">
+        <div className="container-narrow space-y-6 text-lg leading-relaxed text-navy/80">
           <p>
             The big national brands lock customers into 36-month contracts and
             route their support calls through anonymous call centers. The
@@ -39,7 +43,7 @@ export default function AboutPage() {
             We&apos;re not the cheapest. We&apos;re not the biggest. We&apos;re
             not trying to be either.
           </p>
-          <p className="font-serif text-xl font-semibold italic text-navy">
+          <p className="text-xl font-semibold italic text-navy">
             We&apos;re trying to be the security company your parents would
             have used — supercharged with the tools and software customers
             expect today.
@@ -49,13 +53,13 @@ export default function AboutPage() {
 
       <section className="bg-navy py-20 text-cream">
         <div className="container-narrow">
-          <p className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+          <p className="text-xs font-bold uppercase tracking-widest text-gold">
             How Halstead works
           </p>
-          <h2 className="mt-3 font-serif text-3xl font-semibold text-cream md:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold text-cream md:text-4xl text-balance">
             A network of local dealers, supported by a national platform.
           </h2>
-          <div className="mt-8 space-y-6 font-sans text-lg leading-relaxed text-cream/80">
+          <div className="mt-8 space-y-6 text-lg leading-relaxed text-cream/80">
             <p>
               Halstead Security is a network of independent dealers operating
               under the Halstead brand in their local territories. Each dealer
@@ -79,18 +83,17 @@ export default function AboutPage() {
       <section className="bg-cream py-20">
         <div className="container-narrow">
           <p className="eyebrow">Founded by Robert Reyna</p>
-          <h2 className="heading-section mt-3">Part of Reyna Holdings.</h2>
-          <div className="mt-8 space-y-6 font-sans text-lg leading-relaxed text-navy/80">
+          <h2 className="heading-section mt-3 text-balance">Part of Reyna Holdings.</h2>
+          <div className="mt-8 space-y-6 text-lg leading-relaxed text-navy/80">
             <p>
               Halstead Security is a venture of Reyna Holdings, a multi-vertical
-              operating group based in Corpus Christi, Texas. Reyna ventures
-              include:
+              operating group based in Corpus Christi, Texas.
             </p>
             <ul className="ml-6 list-disc space-y-2">
-              <li><span className="font-semibold">Salon Envy USA</span> — a salon franchise with locations across South Texas</li>
+              <li><span className="font-semibold">Salon Envy USA</span> — salon franchise</li>
               <li><span className="font-semibold">Lone Star Contracting Services</span> — commercial landscaping</li>
               <li><span className="font-semibold">Reyna Title</span> — private mortgage lending</li>
-              <li><span className="font-semibold">FieldPermit / Permit Crew</span> — construction compliance and permitting</li>
+              <li><span className="font-semibold">FieldPermit</span> — construction compliance</li>
               <li><span className="font-semibold">Halstead Security</span> — the company you&apos;re reading about</li>
             </ul>
             <p>
@@ -109,15 +112,15 @@ export default function AboutPage() {
       <section className="bg-cream pb-20">
         <div className="container-narrow">
           <h2 className="heading-subsection">What Halstead is not.</h2>
-          <p className="mt-4 font-sans text-lg leading-relaxed text-navy/80">
-            We&apos;re trying to be transparent from the start, so here&apos;s
-            what we&apos;re explicitly not:
+          <p className="mt-4 text-lg leading-relaxed text-navy/80">
+            Transparent from the start, here&apos;s what we&apos;re explicitly
+            not:
           </p>
-          <ul className="mt-6 space-y-3 font-sans text-base text-navy/80">
+          <ul className="mt-6 space-y-3 text-base text-navy/80">
             <li>• <span className="font-semibold">Not a 36-month contract company.</span> We earn your business every month after year one.</li>
-            <li>• <span className="font-semibold">Not a tech startup.</span> We&apos;re a security company that uses modern technology.</li>
+            <li>• <span className="font-semibold">Not a tech startup.</span> A security company that uses modern technology.</li>
             <li>• <span className="font-semibold">Not the cheapest option.</span> Cheap security usually means cheap product or cheap service.</li>
-            <li>• <span className="font-semibold">Not building our own central monitoring station.</span> We partner with established UL-listed central stations.</li>
+            <li>• <span className="font-semibold">Not building our own central monitoring station.</span> We partner with established UL-listed providers.</li>
             <li>• <span className="font-semibold">Not building our own hardware.</span> We source from professional ONVIF-compliant suppliers.</li>
             <li>• <span className="font-semibold">Not licensed in every state yet.</span> We launch state by state with a licensed local dealer in each market.</li>
           </ul>
@@ -126,31 +129,31 @@ export default function AboutPage() {
 
       <section className="bg-navy py-16 text-cream">
         <div className="container-narrow text-center">
-          <h2 className="font-serif text-3xl font-semibold text-cream">
+          <h2 className="text-3xl font-bold text-cream md:text-4xl">
             Get in touch.
           </h2>
-          <div className="mt-8 grid gap-6 font-sans text-base text-cream/80 md:grid-cols-2">
+          <div className="mt-8 grid gap-6 text-base text-cream/80 md:grid-cols-2">
             <div>
               <p className="font-semibold text-gold">Customer questions</p>
-              <a href="mailto:hello@halsteadsecurity.com" className="text-cream/80 hover:text-cream">
+              <a href="mailto:hello@halsteadsecurity.com" className="hover:text-cream">
                 hello@halsteadsecurity.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-gold">Become a dealer</p>
-              <a href="mailto:dealers@halsteadsecurity.com" className="text-cream/80 hover:text-cream">
+              <a href="mailto:dealers@halsteadsecurity.com" className="hover:text-cream">
                 dealers@halsteadsecurity.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-gold">White-label partnerships</p>
-              <a href="mailto:partner@halsteadsecurity.com" className="text-cream/80 hover:text-cream">
+              <a href="mailto:partner@halsteadsecurity.com" className="hover:text-cream">
                 partner@halsteadsecurity.com
               </a>
             </div>
             <div>
               <p className="font-semibold text-gold">Press</p>
-              <a href="mailto:press@halsteadsecurity.com" className="text-cream/80 hover:text-cream">
+              <a href="mailto:press@halsteadsecurity.com" className="hover:text-cream">
                 press@halsteadsecurity.com
               </a>
             </div>

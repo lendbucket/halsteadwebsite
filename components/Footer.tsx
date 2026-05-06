@@ -1,100 +1,153 @@
 import Link from "next/link";
-import { Shield } from "lucide-react";
+import { ShieldCheck, Mail, Phone, MapPin } from "lucide-react";
+import { SITE } from "@/lib/seo";
 
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-navy text-cream">
       <div className="container-wide py-16">
-        <div className="grid gap-12 md:grid-cols-4">
-          <div className="md:col-span-1">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+          {/* Brand */}
+          <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
-              <Shield className="h-7 w-7 text-gold" strokeWidth={2.5} />
-              <span className="font-serif text-2xl font-bold text-cream">
+              <ShieldCheck className="h-7 w-7 text-gold" strokeWidth={2.5} />
+              <span className="text-2xl font-bold tracking-tight text-cream">
                 Halstead
               </span>
             </Link>
-            <p className="mt-4 font-sans text-sm leading-relaxed text-cream/70">
-              Professional security, installed in your neighborhood. Heritage
-              trade brand for the modern home.
+            <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/70">
+              Professional home security, installed in your neighborhood.
+              Heritage trade brand for the modern home.
             </p>
+            <div className="mt-6 space-y-3 text-sm text-cream/70">
+              <a
+                href={`mailto:${SITE.email}`}
+                className="flex items-center gap-2 hover:text-cream"
+              >
+                <Mail className="h-4 w-4" />
+                {SITE.email}
+              </a>
+              <a
+                href={`tel:${SITE.phone}`}
+                className="flex items-center gap-2 hover:text-cream"
+              >
+                <Phone className="h-4 w-4" />
+                {SITE.phone.replace("+1-", "(").replace(/(\d{3})-(\d{3})-(\d{4})/, "$1) $2-$3")}
+              </a>
+              <p className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                Corpus Christi, TX
+              </p>
+            </div>
           </div>
 
+          {/* For Homeowners */}
           <div>
-            <h3 className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
               For Homeowners
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-3 text-sm">
               <li>
-                <Link href="/plans" className="font-sans text-sm text-cream/80 hover:text-cream">
+                <Link href="/plans" className="text-cream/80 hover:text-cream">
                   Plans &amp; Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/features" className="font-sans text-sm text-cream/80 hover:text-cream">
+                <Link href="/features" className="text-cream/80 hover:text-cream">
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-sans text-sm text-cream/80 hover:text-cream">
+                <Link href="/contact" className="text-cream/80 hover:text-cream">
                   Get a Quote
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-cream/80 hover:text-cream">
+                  About Halstead
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* For Operators */}
           <div>
-            <h3 className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
               For Operators
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-3 text-sm">
               <li>
-                <Link href="/dealer" className="font-sans text-sm text-cream/80 hover:text-cream">
+                <Link href="/dealer" className="text-cream/80 hover:text-cream">
                   Become a Dealer
                 </Link>
               </li>
               <li>
-                <Link href="/dealer/faq" className="font-sans text-sm text-cream/80 hover:text-cream">
+                <Link href="/dealer/faq" className="text-cream/80 hover:text-cream">
                   Dealer FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/white-label" className="font-sans text-sm text-cream/80 hover:text-cream">
+                <Link href="/dealer/apply" className="text-cream/80 hover:text-cream">
+                  Apply Now
+                </Link>
+              </li>
+              <li>
+                <Link href="/white-label" className="text-cream/80 hover:text-cream">
                   White-Label Platform
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Service Areas */}
           <div>
-            <h3 className="font-sans text-sm font-semibold uppercase tracking-widest text-gold">
-              Company
+            <h3 className="text-xs font-bold uppercase tracking-widest text-gold">
+              Service Areas
             </h3>
-            <ul className="mt-4 space-y-3">
+            <ul className="mt-4 space-y-3 text-sm">
               <li>
-                <Link href="/about" className="font-sans text-sm text-cream/80 hover:text-cream">
-                  About
+                <Link href="/states/texas" className="text-cream/80 hover:text-cream">
+                  Texas
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="font-sans text-sm text-cream/80 hover:text-cream">
-                  Contact
+                <Link href="/cities/corpus-christi" className="text-cream/80 hover:text-cream">
+                  Corpus Christi
                 </Link>
               </li>
               <li>
-                <a href="mailto:hello@halsteadsecurity.com" className="font-sans text-sm text-cream/80 hover:text-cream">
-                  hello@halsteadsecurity.com
-                </a>
+                <Link href="/cities/houston" className="text-cream/80 hover:text-cream">
+                  Houston
+                </Link>
+              </li>
+              <li>
+                <Link href="/cities/san-antonio" className="text-cream/80 hover:text-cream">
+                  San Antonio
+                </Link>
+              </li>
+              <li>
+                <Link href="/cities/austin" className="text-cream/80 hover:text-cream">
+                  Austin
+                </Link>
+              </li>
+              <li>
+                <Link href="/cities/dallas" className="text-cream/80 hover:text-cream">
+                  Dallas
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-cream/10 pt-8 text-center md:flex md:justify-between md:text-left">
-          <p className="font-sans text-xs text-cream/60">
-            &copy; {new Date().getFullYear()} Halstead Security. All rights reserved.
+        <div className="mt-12 flex flex-col gap-4 border-t border-cream/10 pt-8 md:flex-row md:items-center md:justify-between">
+          <p className="text-xs text-cream/60">
+            &copy; {year} Halstead Security, LLC. All rights reserved.
           </p>
-          <p className="mt-2 font-sans text-xs text-cream/60 md:mt-0">
-            Halstead Security and the Halstead Security shield mark are trademarks of Halstead Security, LLC.
+          <p className="text-xs text-cream/60">
+            Halstead Security and the Halstead Security shield mark are
+            trademarks of Halstead Security, LLC.
           </p>
         </div>
       </div>
