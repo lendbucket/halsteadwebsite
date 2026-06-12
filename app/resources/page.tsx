@@ -21,7 +21,7 @@ export default function ResourcesHubPage() {
           </h1>
           <p className="body-large mt-6">
             Honest buying guides, cost breakdowns, and industry data. Built to
-            help you make a thoughtful decision — not pushed by marketing.
+            help you make a thoughtful decision, not pushed by marketing.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function ResourcesHubPage() {
             >
               hello@halsteadsecurity.com
             </a>{" "}
-            — a real person responds within 1 business day.
+            and a real person responds within 1 business day.
           </p>
         </div>
       </section>

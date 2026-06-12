@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { SOLUTIONS_LIST } from "@/lib/solutions";
 
 export const metadata: Metadata = {
-  title: "Solutions — Industries Halstead Security Serves",
+  title: "Solutions: Industries Halstead Security Serves",
   description:
     "Halstead Security solutions for residential homes, small businesses, multifamily properties, short-term rentals, construction sites, cannabis dispensaries, auto dealerships, and houses of worship.",
   alternates: { canonical: "/solutions" },

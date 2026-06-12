@@ -16,7 +16,7 @@ import { generateFaqSchema, SITE } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Halstead Security — Professional Home Security, Installed in Your Neighborhood",
+  title: "Halstead Security | Home Security, Locally Installed",
   description:
     "Real cameras, professionally installed by a local technician. No 36-month contracts. Plans from $30/month with smart AI alerts, mobile app, and optional 24/7 professional monitoring. Free quote in minutes.",
   alternates: { canonical: "/" },
@@ -33,7 +33,7 @@ const homeFaqs = [
   },
   {
     q: "Is Halstead Security professionally installed?",
-    a: "Yes. Every Halstead system is installed by a state-licensed local technician — not a drop-shipped DIY box. Your installer is your neighbor, and you can call them directly for support, service, or troubleshooting throughout the life of your system.",
+    a: "Yes. Every Halstead system is installed by a state-licensed local technician, not a drop-shipped DIY box. Your installer is your neighbor, and you can call them directly for support, service, or troubleshooting throughout the life of your system.",
   },
   {
     q: "Where does Halstead Security currently operate?",
@@ -127,7 +127,7 @@ export default function HomePage() {
             </h2>
             <p className="body-large mt-6">
               Three reasons Halstead works differently than ADT, Ring, or
-              SimpliSafe — and why our customers stay.
+              SimpliSafe, and why our customers stay.
             </p>
           </div>
 
@@ -135,7 +135,7 @@ export default function HomePage() {
             <PillarCard
               icon={<MapPin className="h-7 w-7 text-gold" strokeWidth={2} />}
               title="Locally installed by your neighbor"
-              description="A real, state-licensed technician comes to your home. No drop-shipped box. Your installer is your neighbor — you can call them directly for support."
+              description="A real, state-licensed technician comes to your home. No drop-shipped box. Your installer is your neighbor, and you can call them directly for support."
             />
             <PillarCard
               icon={<Sparkles className="h-7 w-7 text-gold" strokeWidth={2} />}
@@ -146,7 +146,7 @@ export default function HomePage() {
             <PillarCard
               icon={<Phone className="h-7 w-7 text-gold" strokeWidth={2} />}
               title="Real people answer"
-              description="When you call Halstead, a real person picks up. Your local Halstead team handles installation, support, and service — not an offshore call center."
+              description="When you call Halstead, a real person picks up. Your local Halstead team handles installation, support, and service. No offshore call center."
             />
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function HomePage() {
               <p className="mt-6 text-lg leading-relaxed text-cream/80 text-pretty">
                 Most security apps blow up your phone with motion alerts, flag
                 every passing car, and scare you out of using them. Halstead is
-                engineered differently — with smart filtering that knows the
+                engineered differently, with smart filtering that knows the
                 difference between a delivery truck and a stranger.
               </p>
               <Link
@@ -181,7 +181,7 @@ export default function HomePage() {
             <ul className="grid gap-3 sm:grid-cols-2">
               {[
                 "Two-camera verification cuts false alarms 70%",
-                "AI motion classification — person, vehicle, package",
+                "AI motion classification: person, vehicle, package",
                 "Vacation mode automation",
                 "Visitor pass for cleaners and contractors",
                 "Storm mode mutes weather false alarms",

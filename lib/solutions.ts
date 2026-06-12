@@ -1,5 +1,5 @@
 /**
- * Halstead Solutions — vertical-specific landing pages.
+ * Halstead Solutions: vertical-specific landing pages.
  *
  * Each solution targets a specific industry/use-case with keyword-rich content
  * designed to rank for queries like "home security for Airbnb hosts" or
@@ -44,7 +44,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Home Security",
     shortName: "Residential",
     industry: "Residential homes",
-    metaTitle: "Home Security Systems — Professional Installation from $30/month",
+    metaTitle: "Home Security Systems: Professional Installation from $30/month",
     metaDescription:
       "Halstead home security delivers professionally installed cameras, smart AI motion alerts, and optional 24/7 monitoring for single-family homes. No 36-month contracts. Free quote in minutes.",
     hero: {
@@ -55,7 +55,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     },
     problem: {
       title: "What's wrong with home security today.",
-      body: "The big national brands lock customers into 36-month contracts at $40-$60 per month, then route every support call through anonymous offshore call centers. The DIY brands ship boxes and abandon you to figure out installation, network configuration, and troubleshooting alone. Neither serves homeowners well — especially families that want both reliability and the flexibility to leave if something doesn't work.",
+      body: "The big national brands lock customers into 36-month contracts at $40-$60 per month, then route every support call through anonymous offshore call centers. The DIY brands ship boxes and abandon you to figure out installation, network configuration, and troubleshooting alone. Neither serves homeowners well, especially families that want both reliability and the flexibility to leave if something doesn't work.",
     },
     solution: {
       title: "Halstead's residential approach.",
@@ -70,7 +70,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "Smart AI motion alerts",
         description:
-          "Halstead's AI distinguishes person, vehicle, package, and animal motion — so you only get notified for the categories that matter to you. Available on the Premium tier and above. Cuts false alerts by an estimated 70%.",
+          "Halstead's AI distinguishes person, vehicle, package, and animal motion, so you only get notified for the categories that matter to you. Available on the Premium tier and above. Cuts false alerts by an estimated 70%.",
       },
       {
         title: "Vacation mode automation",
@@ -80,7 +80,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "Family check-ins",
         description:
-          "Pre-register household members at install. When your kids come home from school, Halstead recognizes them and sends a 'Sarah is home, 3:47pm' notification — without triggering a scary alarm.",
+          "Pre-register household members at install. When your kids come home from school, Halstead recognizes them and sends a 'Sarah is home, 3:47pm' notification, without triggering a scary alarm.",
       },
       {
         title: "Visitor passes for cleaners and contractors",
@@ -131,7 +131,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Business Security",
     shortName: "Commercial",
     industry: "Small and mid-sized businesses",
-    metaTitle: "Small Business Security Systems — Restaurants, Retail, Offices",
+    metaTitle: "Small Business Security Systems: Restaurants, Retail, Offices",
     metaDescription:
       "Professional commercial security from Halstead. Camera systems, access control, alarm monitoring, and after-hours dispatch for restaurants, retail stores, offices, and small businesses. Locally installed, no long contracts.",
     hero: {
@@ -146,7 +146,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     },
     solution: {
       title: "Halstead's commercial approach.",
-      body: "Halstead delivers commercial-grade IP cameras with proper night vision, weatherproofing, and motion detection — installed by a state-licensed local technician who understands commercial environments. Optional 24/7 professional monitoring with police dispatch, after-hours alarm response, and integrated alarm panels. Plus the Halstead software your team can actually use: multi-user access, role-based permissions, audit logs, and customizable alerts.",
+      body: "Halstead delivers commercial-grade IP cameras with proper night vision, weatherproofing, and motion detection, all installed by a state-licensed local technician who understands commercial environments. Optional 24/7 professional monitoring with police dispatch, after-hours alarm response, and integrated alarm panels. Plus the Halstead software your team can actually use: multi-user access, role-based permissions, audit logs, and customizable alerts.",
     },
     keyFeatures: [
       {
@@ -187,7 +187,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     faqs: [
       {
         q: "How is Halstead's commercial pricing different from residential?",
-        a: "Commercial customers typically need more cameras, higher-grade hardware, longer storage retention, and integrated alarm panels — so commercial systems are typically priced from $75 to $200 per month plus hardware. Pricing is quoted per site after a free walk-through with your local Halstead team.",
+        a: "Commercial customers typically need more cameras, higher-grade hardware, longer storage retention, and integrated alarm panels, so commercial systems are typically priced from $75 to $200 per month plus hardware. Pricing is quoted per site after a free walk-through with your local Halstead team.",
       },
       {
         q: "Can Halstead handle multi-location businesses?",
@@ -210,14 +210,14 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Multifamily & Apartments",
     shortName: "Multifamily",
     industry: "Apartment buildings, condo associations",
-    metaTitle: "Apartment Security Systems — Multifamily Camera & Access Control",
+    metaTitle: "Apartment Security Systems: Multifamily Camera & Access Control",
     metaDescription:
       "Halstead multifamily security: per-unit camera options, common area monitoring, package room cameras, parking lot coverage, and resident-facing app. Built for property managers and HOAs.",
     hero: {
       eyebrow: "For Property Managers",
       title: "Security infrastructure for the modern apartment building.",
       subtitle:
-        "Halstead serves multifamily properties with consolidated common area monitoring, package room cameras, parking lot coverage, optional in-unit camera kits, and a resident-facing app — all under one platform with property manager dashboards.",
+        "Halstead serves multifamily properties with consolidated common area monitoring, package room cameras, parking lot coverage, optional in-unit camera kits, and a resident-facing app, all under one platform with property manager dashboards.",
     },
     problem: {
       title: "Multifamily security is a coordination nightmare.",
@@ -231,7 +231,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "Common area camera coverage",
         description:
-          "Lobbies, hallways, parking lots, package rooms, fitness centers, pool decks, mail rooms — all covered with commercial-grade IP cameras and integrated into a single management portal.",
+          "Lobbies, hallways, parking lots, package rooms, fitness centers, pool decks, mail rooms. All covered with commercial-grade IP cameras and integrated into a single management portal.",
       },
       {
         title: "Package room cameras with theft alerts",
@@ -289,7 +289,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Short-Term Rentals",
     shortName: "STR / Airbnb",
     industry: "Airbnb and VRBO hosts",
-    metaTitle: "Airbnb Security Cameras — Short-Term Rental Property Protection",
+    metaTitle: "Airbnb Security Cameras: Short-Term Rental Property Protection",
     metaDescription:
       "Halstead protects Airbnb and VRBO short-term rental properties with platform-compliant cameras, noise monitoring, occupancy detection, and damage documentation. Built for hosts and property managers.",
     hero: {
@@ -300,7 +300,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     },
     problem: {
       title: "STR hosts have unique security needs.",
-      body: "Airbnb's policy requires external camera disclosure and prohibits interior cameras in private spaces. Hosts need to detect parties, unauthorized guests, smoking, pets, and property damage — all while respecting platform rules and guest privacy. Generic home security wasn't built for this.",
+      body: "Airbnb's policy requires external camera disclosure and prohibits interior cameras in private spaces. Hosts need to detect parties, unauthorized guests, smoking, pets, and property damage, all while respecting platform rules and guest privacy. Generic home security wasn't built for this.",
     },
     solution: {
       title: "Halstead's STR approach.",
@@ -310,12 +310,12 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "Exterior cameras with platform disclosure",
         description:
-          "Halstead's STR tier includes exterior-only camera placement with pre-written disclosure language for Airbnb and VRBO listings. Doorbell cameras at entry, exterior pole cameras, driveway cameras — all visible and disclosed per platform requirements.",
+          "Halstead's STR tier includes exterior-only camera placement with pre-written disclosure language for Airbnb and VRBO listings. Doorbell cameras at entry, exterior pole cameras, driveway cameras, all visible and disclosed per platform requirements.",
       },
       {
         title: "Noise monitoring without audio recording",
         description:
-          "Noise sensors measure decibel levels in real-time without recording audio (which is restricted in many jurisdictions and prohibited by Airbnb's interior-camera rules). Get alerts when noise exceeds set thresholds — common for parties.",
+          "Noise sensors measure decibel levels in real-time without recording audio (which is restricted in many jurisdictions and prohibited by Airbnb's interior-camera rules). Get alerts when noise exceeds set thresholds, which is common for parties.",
       },
       {
         title: "Occupancy detection",
@@ -349,7 +349,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       },
       {
         q: "Will Halstead's cameras show up on my Airbnb listing?",
-        a: "Yes — and they need to. Airbnb requires hosts to disclose all surveillance equipment in the listing. Halstead provides pre-written disclosure language compliant with Airbnb policy that you can copy directly into your listing's house rules and amenities.",
+        a: "Yes, and they need to. Airbnb requires hosts to disclose all surveillance equipment in the listing. Halstead provides pre-written disclosure language compliant with Airbnb policy that you can copy directly into your listing's house rules and amenities.",
       },
       {
         q: "Can I monitor for parties?",
@@ -357,7 +357,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       },
       {
         q: "What about damage documentation for resolution disputes?",
-        a: "Halstead automatically generates pre-checkin and post-checkout snapshots from your exterior cameras. If a guest causes property damage, you have time-stamped photos showing the property's condition before and after their stay — useful evidence for Airbnb resolution claims.",
+        a: "Halstead automatically generates pre-checkin and post-checkout snapshots from your exterior cameras. If a guest causes property damage, you have time-stamped photos showing the property's condition before and after their stay. This is useful evidence for Airbnb resolution claims.",
       },
     ],
     relatedSolutions: ["home-security", "multifamily"],
@@ -368,18 +368,18 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Construction Site Security",
     shortName: "Construction",
     industry: "Active construction projects",
-    metaTitle: "Construction Site Security Cameras — Job Site Theft Prevention",
+    metaTitle: "Construction Site Security Cameras: Job Site Theft Prevention",
     metaDescription:
       "Halstead construction site security: solar-powered cameras, cellular connectivity, theft detection, and remote monitoring for active job sites. Mobile, weatherproof, and easy to relocate as projects progress.",
     hero: {
       eyebrow: "For Builders",
       title: "Job site theft prevention without dragging cable.",
       subtitle:
-        "Halstead deploys solar-powered, cellular-connected, weatherproof camera systems to active construction sites — without requiring power, internet, or permanent infrastructure. Mobile, relocatable, and built for jobsite conditions.",
+        "Halstead deploys solar-powered, cellular-connected, weatherproof camera systems to active construction sites, without requiring power, internet, or permanent infrastructure. Mobile, relocatable, and built for jobsite conditions.",
     },
     problem: {
       title: "Construction sites are theft magnets.",
-      body: "Active job sites are attractive targets: unfinished structures with copper wiring, expensive tools, equipment, materials, and no security. Traditional security systems require power and internet — neither of which exist on a fresh job site. Most builders self-insure for material theft and absorb the losses, which can run $10K to $100K per project.",
+      body: "Active job sites are attractive targets: unfinished structures with copper wiring, expensive tools, equipment, materials, and no security. Traditional security systems require power and internet, neither of which exist on a fresh job site. Most builders self-insure for material theft and absorb the losses, which can run $10K to $100K per project.",
     },
     solution: {
       title: "Halstead's construction approach.",
@@ -447,14 +447,14 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Cannabis Dispensary Security",
     shortName: "Cannabis",
     industry: "Licensed cannabis retailers",
-    metaTitle: "Cannabis Dispensary Security — State-Compliant Camera Systems",
+    metaTitle: "Cannabis Dispensary Security: State-Compliant Camera Systems",
     metaDescription:
       "Halstead cannabis dispensary security: state regulation-compliant camera coverage, vault monitoring, transport tracking, and 90-day video retention. Built for licensed retailers in TX, NM, AZ, CO.",
     hero: {
       eyebrow: "For Licensed Cannabis Retailers",
       title: "State-compliant security for cannabis operations.",
       subtitle:
-        "Halstead builds dispensary security to state regulatory specifications — full camera coverage of point-of-sale, storage, vault, and transport operations with mandated retention periods, redundant recording, and compliance reporting built in.",
+        "Halstead builds dispensary security to state regulatory specifications: full camera coverage of point-of-sale, storage, vault, and transport operations with mandated retention periods, redundant recording, and compliance reporting built in.",
     },
     problem: {
       title: "Cannabis security is a regulatory minefield.",
@@ -468,7 +468,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "State-specific compliance build-out",
         description:
-          "Halstead works to your state's regulatory specifications: Texas, New Mexico, Arizona, Colorado, and others. Coverage zones, resolution, retention, redundancy — all built to spec.",
+          "Halstead works to your state's regulatory specifications: Texas, New Mexico, Arizona, Colorado, and others. Coverage zones, resolution, retention, redundancy, all built to spec.",
       },
       {
         title: "Vault and storage monitoring",
@@ -515,7 +515,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       },
       {
         q: "How is cannabis pricing different?",
-        a: "Cannabis dispensaries typically need more cameras, longer retention, and redundant backup — so pricing typically runs $300 to $800 per month plus hardware. Quoted per location after a compliance review with your team.",
+        a: "Cannabis dispensaries typically need more cameras, longer retention, and redundant backup, so pricing typically runs $300 to $800 per month plus hardware. Quoted per location after a compliance review with your team.",
       },
     ],
     relatedSolutions: ["business-security", "auto-dealership"],
@@ -526,7 +526,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Auto Dealership Security",
     shortName: "Auto Dealers",
     industry: "Car dealerships and auto lots",
-    metaTitle: "Auto Dealership Security — License Plate Readers, Lot Monitoring",
+    metaTitle: "Auto Dealership Security: License Plate Readers, Lot Monitoring",
     metaDescription:
       "Halstead protects auto dealerships with full lot camera coverage, license plate readers, after-hours monitoring, and integration with dealership inventory systems. Built for car dealers and BHPH lots.",
     hero: {
@@ -557,7 +557,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "After-hours active monitoring",
         description:
-          "After business hours, motion in inventory areas triggers verified alerts. UL-listed central station operators view the camera, confirm the threat, and dispatch police directly — typically faster than alarm-only response.",
+          "After business hours, motion in inventory areas triggers verified alerts. UL-listed central station operators view the camera, confirm the threat, and dispatch police directly, typically faster than alarm-only response.",
       },
       {
         title: "Showroom and office coverage",
@@ -582,7 +582,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     faqs: [
       {
         q: "How effective are license plate readers?",
-        a: "LPR cameras log every plate that enters and exits your lot, creating a searchable record for incident investigation, test-drive verification, and stock loss reconciliation. They also act as a deterrent — visible LPR cameras significantly reduce opportunistic theft.",
+        a: "LPR cameras log every plate that enters and exits your lot, creating a searchable record for incident investigation, test-drive verification, and stock loss reconciliation. They also act as a deterrent. Visible LPR cameras significantly reduce opportunistic theft.",
       },
       {
         q: "Can Halstead detect catalytic converter theft attempts?",
@@ -605,14 +605,14 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Houses of Worship Security",
     shortName: "Worship",
     industry: "Churches, mosques, synagogues, temples",
-    metaTitle: "Church Security Systems — Houses of Worship Camera & Monitoring",
+    metaTitle: "Church Security Systems: Houses of Worship Camera & Monitoring",
     metaDescription:
       "Halstead protects churches, mosques, synagogues, and temples with welcoming-but-secure camera systems, parking lot coverage, and optional 24/7 monitoring. Mission-focused security for places of worship.",
     hero: {
       eyebrow: "For Houses of Worship",
       title: "Security that doesn't compromise welcome.",
       subtitle:
-        "Halstead protects churches, mosques, synagogues, and temples with thoughtful camera coverage, parking lot monitoring, and optional 24/7 dispatch — designed to keep your community safe while preserving the welcoming atmosphere your mission requires.",
+        "Halstead protects churches, mosques, synagogues, and temples with thoughtful camera coverage, parking lot monitoring, and optional 24/7 dispatch, designed to keep your community safe while preserving the welcoming atmosphere your mission requires.",
     },
     problem: {
       title: "Houses of worship face unique challenges.",
@@ -626,7 +626,7 @@ export const SOLUTIONS: Record<string, Solution> = {
       {
         title: "Discrete camera placement",
         description:
-          "Halstead works with your facilities team to place cameras strategically — sanctuaries, lobbies, education wings, parking lots — without making the space feel surveilled. Mounting that integrates with architecture rather than dominates it.",
+          "Halstead works with your facilities team to place cameras strategically (sanctuaries, lobbies, education wings, parking lots) without making the space feel surveilled. Mounting that integrates with architecture rather than dominates it.",
       },
       {
         title: "Parking lot security",
@@ -661,7 +661,7 @@ export const SOLUTIONS: Record<string, Solution> = {
     faqs: [
       {
         q: "Does Halstead cover the sanctuary itself?",
-        a: "Yes — typically with discrete camera placement at the rear of the sanctuary covering the worship area. Coverage decisions are made in consultation with religious leadership to ensure the cameras don't interfere with worship or pastoral care.",
+        a: "Yes, typically with discrete camera placement at the rear of the sanctuary covering the worship area. Coverage decisions are made in consultation with religious leadership to ensure the cameras don't interfere with worship or pastoral care.",
       },
       {
         q: "What about pastoral care confidentiality?",

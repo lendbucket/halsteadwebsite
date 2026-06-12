@@ -8,7 +8,7 @@ import { ORGANIZATION_SCHEMA, LOCAL_BUSINESS_SCHEMA, SITE } from "@/lib/seo";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Halstead Security — Professional Home Security, Locally Installed",
+    default: "Halstead Security | Professional Home Security",
     template: "%s · Halstead Security",
   },
   description: SITE.description,
@@ -45,14 +45,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE.url,
     siteName: SITE.name,
-    title: "Halstead Security — Professional Home Security, Locally Installed",
+    title: "Halstead Security | Professional Home Security",
     description: SITE.description,
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Halstead Security — Professional home security, installed in your neighborhood",
+        alt: "Halstead Security: professional home security, installed in your neighborhood",
       },
     ],
   },

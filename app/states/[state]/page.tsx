@@ -104,7 +104,7 @@ export async function generateMetadata({
   if (!data) return {};
 
   return {
-    title: `Halstead Security in ${data.name} — Local Home Security`,
+    title: `Halstead Security in ${data.name} | Local Home Security`,
     description: `Professional home security in ${data.name} from $30/month. Locally installed by state-licensed Halstead dealers in ${data.cities.slice(0, 3).join(", ")} and beyond. No 36-month contracts.`,
     alternates: { canonical: `/states/${state}` },
     openGraph: {

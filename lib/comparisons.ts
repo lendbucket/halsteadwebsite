@@ -1,7 +1,7 @@
 /**
  * Halstead vs Competitor pages.
  *
- * "X vs Y" search queries capture huge volume — people researching security
+ * "X vs Y" search queries capture huge volume. People researching security
  * companies search for direct comparisons. These pages target that intent.
  */
 
@@ -32,7 +32,7 @@ export const COMPARISONS: Record<string, Comparison> = {
   "halstead-vs-adt": {
     slug: "halstead-vs-adt",
     competitor: "ADT",
-    metaTitle: "Halstead vs ADT — Home Security Comparison 2026",
+    metaTitle: "Halstead vs ADT: Home Security Comparison 2026",
     metaDescription:
       "Halstead vs ADT: contract length, pricing, features, professional install, and customer support compared. See which security company actually fits how families live in 2026.",
     hero: {
@@ -44,7 +44,7 @@ export const COMPARISONS: Record<string, Comparison> = {
     competitorOverview:
       "ADT is the largest home security company in the United States, serving roughly 6 million customers. ADT operates through a combination of corporate-owned operations and authorized dealers. The company is known for professional installation, professional monitoring through company-owned central stations, and 36-month service contracts that lock customers in. Pricing typically runs $40 to $60 per month for service, with hardware costs amortized over the contract.",
     halsteadOverview:
-      "Halstead is a network of independent, locally-owned dealers operating under a national brand and software platform. Customers get professional installation by a state-licensed local technician, smart software with AI motion classification and vacation mode, and optional 24/7 professional monitoring through a UL-listed central station partner. Pricing is $30 to $75 per month with a 12-month minimum then month-to-month — no 36-month contracts.",
+      "Halstead is a network of independent, locally-owned dealers operating under a national brand and software platform. Customers get professional installation by a state-licensed local technician, smart software with AI motion classification and vacation mode, and optional 24/7 professional monitoring through a UL-listed central station partner. Pricing is $30 to $75 per month with a 12-month minimum then month-to-month, with no 36-month contracts.",
     comparisonTable: [
       {
         feature: "Starting price",
@@ -162,7 +162,7 @@ export const COMPARISONS: Record<string, Comparison> = {
       },
       {
         q: "What about ADT's brand reputation?",
-        a: "ADT has been around since 1874 and is one of the most recognized names in home security. That brand recognition has real value — many homeowners feel safer with the ADT yard sign visible to potential intruders. Halstead is building its own brand recognition over time. As of 2026, Halstead is a newer name in the market.",
+        a: "ADT has been around since 1874 and is one of the most recognized names in home security. That brand recognition has real value, and many homeowners feel safer with the ADT yard sign visible to potential intruders. Halstead is building its own brand recognition over time. As of 2026, Halstead is a newer name in the market.",
       },
     ],
   },
@@ -170,7 +170,7 @@ export const COMPARISONS: Record<string, Comparison> = {
   "halstead-vs-ring": {
     slug: "halstead-vs-ring",
     competitor: "Ring",
-    metaTitle: "Halstead vs Ring — Professional Install vs DIY Compared 2026",
+    metaTitle: "Halstead vs Ring: Professional Install vs DIY Compared 2026",
     metaDescription:
       "Halstead vs Ring: professional installation vs DIY, smart features, monitoring options, and total cost compared. Which home security approach actually fits your needs?",
     hero: {
@@ -284,7 +284,7 @@ export const COMPARISONS: Record<string, Comparison> = {
       },
       {
         q: "Is Halstead's monitoring better than Ring's?",
-        a: "Halstead's Pro Monitoring tier uses a UL-listed central station partner with full professional dispatch capability — the same standard as ADT. Ring Protect Pro offers professional monitoring but with more limited capabilities and different operational standards. For users who need real central station dispatch, Halstead's monitoring is more robust.",
+        a: "Halstead's Pro Monitoring tier uses a UL-listed central station partner with full professional dispatch capability, the same standard as ADT. Ring Protect Pro offers professional monitoring but with more limited capabilities and different operational standards. For users who need real central station dispatch, Halstead's monitoring is more robust.",
       },
       {
         q: "What about Ring's data sharing with police?",
@@ -296,7 +296,7 @@ export const COMPARISONS: Record<string, Comparison> = {
   "halstead-vs-simplisafe": {
     slug: "halstead-vs-simplisafe",
     competitor: "SimpliSafe",
-    metaTitle: "Halstead vs SimpliSafe — Pro Install vs DIY Security 2026",
+    metaTitle: "Halstead vs SimpliSafe: Pro Install vs DIY Security 2026",
     metaDescription:
       "Halstead vs SimpliSafe: professional installation vs DIY, monitoring quality, pricing, and feature set compared. Which security system fits your needs better in 2026?",
     hero: {
@@ -386,11 +386,11 @@ export const COMPARISONS: Record<string, Comparison> = {
     whoShouldChooseCompetitor:
       "SimpliSafe makes sense if you want absolute lowest-friction setup, you're comfortable with DIY installation, you live outside Halstead's service area, or you specifically prefer a no-contract approach from day one. SimpliSafe's monthly cost with monitoring is meaningfully lower than Halstead's tiers.",
     whoShouldChooseHalstead:
-      "Halstead makes sense if you want professional installation, you want commercial-grade hardware, you value local technician support, you want smarter automation features (vacation mode, family check-ins, visitor passes), or you want hardware financing at 0%. Halstead's professional installation also means proper camera placement — most DIY systems suffer from suboptimal mounting that creates blind spots.",
+      "Halstead makes sense if you want professional installation, you want commercial-grade hardware, you value local technician support, you want smarter automation features (vacation mode, family check-ins, visitor passes), or you want hardware financing at 0%. Halstead's professional installation also means proper camera placement, since most DIY systems suffer from suboptimal mounting that creates blind spots.",
     faqs: [
       {
         q: "Is SimpliSafe's hardware quality lower than Halstead's?",
-        a: "Yes, in objective terms. SimpliSafe uses consumer-grade cameras and sensors designed for ease of DIY installation. Halstead uses commercial-grade ONVIF-compliant cameras with higher resolution, better night vision, weatherproofing, and durability ratings. The difference matters most over time — SimpliSafe hardware is typically replaced every 3-5 years, while commercial-grade hardware lasts 7-10+ years.",
+        a: "Yes, in objective terms. SimpliSafe uses consumer-grade cameras and sensors designed for ease of DIY installation. Halstead uses commercial-grade ONVIF-compliant cameras with higher resolution, better night vision, weatherproofing, and durability ratings. The difference matters most over time: SimpliSafe hardware is typically replaced every 3-5 years, while commercial-grade hardware lasts 7-10+ years.",
       },
       {
         q: "Can I get Halstead's smart features on SimpliSafe?",
@@ -406,7 +406,7 @@ export const COMPARISONS: Record<string, Comparison> = {
   "halstead-vs-vivint": {
     slug: "halstead-vs-vivint",
     competitor: "Vivint",
-    metaTitle: "Halstead vs Vivint — Smart Home Security Comparison 2026",
+    metaTitle: "Halstead vs Vivint: Smart Home Security Comparison 2026",
     metaDescription:
       "Halstead vs Vivint: contract length, smart home integration, professional install, and monthly cost compared. See which security platform actually fits how families live in 2026.",
     hero: {
@@ -416,9 +416,9 @@ export const COMPARISONS: Record<string, Comparison> = {
         "Vivint is a major professional security brand with deep smart home integration. Halstead is a network of local dealers with smart software and modern features. Here's how they compare.",
     },
     competitorOverview:
-      "Vivint provides professional security with strong smart home integration — their core product extends beyond security into thermostats, locks, garage doors, lighting, and other smart home automation. Vivint typically requires a 5-year financing agreement on hardware combined with monthly monitoring fees that often total $60-$100+/month. Sales are largely door-to-door, which has been a source of customer complaints.",
+      "Vivint provides professional security with strong smart home integration. Their core product extends beyond security into thermostats, locks, garage doors, lighting, and other smart home automation. Vivint typically requires a 5-year financing agreement on hardware combined with monthly monitoring fees that often total $60-$100+/month. Sales are largely door-to-door, which has been a source of customer complaints.",
     halsteadOverview:
-      "Halstead provides professional installation through state-licensed local dealers, smart software with AI motion classification and vacation mode, optional 24/7 UL-listed central station monitoring. Halstead is more focused on security than full smart home but supports key integrations through open API access on the Premium tier and above. Pricing is $30-$75/month with 12-month minimum then month-to-month — significantly less than Vivint's typical 5-year hardware financing model.",
+      "Halstead provides professional installation through state-licensed local dealers, smart software with AI motion classification and vacation mode, optional 24/7 UL-listed central station monitoring. Halstead is more focused on security than full smart home but supports key integrations through open API access on the Premium tier and above. Pricing is $30-$75/month with 12-month minimum then month-to-month, significantly less than Vivint's typical 5-year hardware financing model.",
     comparisonTable: [
       {
         feature: "Installation",
@@ -502,7 +502,7 @@ export const COMPARISONS: Record<string, Comparison> = {
       },
       {
         q: "What about Vivint's door-to-door sales reputation?",
-        a: "Vivint has faced criticism for high-pressure door-to-door sales tactics, with regulatory action in some states. Halstead does not employ door-to-door sales — all customer acquisition is inbound through web, referral, or intentional outreach. If you're concerned about high-pressure sales, Halstead's model is structurally different.",
+        a: "Vivint has faced criticism for high-pressure door-to-door sales tactics, with regulatory action in some states. Halstead does not employ door-to-door sales. All customer acquisition is inbound through web, referral, or intentional outreach. If you're concerned about high-pressure sales, Halstead's model is structurally different.",
       },
       {
         q: "Can I switch from Vivint to Halstead mid-contract?",

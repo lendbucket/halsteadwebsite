@@ -282,7 +282,7 @@ export default function DealerApplyPage() {
               By submitting this application, you authorize Halstead Security to
               perform a background check and credit check as part of dealer
               evaluation. The $15,000 founding dealer fee is not collected at
-              this stage — it is paid only after acceptance and contract
+              this stage. It is paid only after acceptance and contract
               signing.
             </div>
 

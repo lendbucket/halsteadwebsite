@@ -1,5 +1,5 @@
 /**
- * Halstead Resources — cornerstone SEO articles.
+ * Halstead Resources: cornerstone SEO articles.
  *
  * Each article targets high-volume informational queries and serves as
  * a topic authority anchor. Schema: Article with author markup.
@@ -77,7 +77,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "If you don't DIY, you pay for professional installation. Most professional installs are bundled into the contract or charged as a one-time fee of $99-$499. DIY systems save this cost but transfer all the work — and risk of poor placement — to you. Bad camera placement causes blind spots, false alarms, and reduced effectiveness.",
+        text: "If you don't DIY, you pay for professional installation. Most professional installs are bundled into the contract or charged as a one-time fee of $99-$499. DIY systems save this cost but transfer all the work (and risk of poor placement) to you. Bad camera placement causes blind spots, false alarms, and reduced effectiveness.",
       },
       {
         type: "heading",
@@ -105,17 +105,17 @@ export const RESOURCES: Record<string, Resource> = {
       {
         type: "list",
         items: [
-          "ADT — $40-$60/month monitoring + $99-$199 install + 36-month contract. Total 36-month cost: $1,540-$2,360 plus equipment.",
-          "Vivint — $60-$100+/month combined hardware financing + monitoring under 5-year agreement. Total 5-year cost: $3,600-$6,000+ minimum.",
-          "Ring — $4-$20/month for Ring Protect, plus DIY hardware $60-$200/device. Total 36-month cost: $144-$720 plus hardware.",
-          "SimpliSafe — $19-$30/month for monitoring, plus $230-$500 hardware kits. Total 36-month cost: $684-$1,580 plus hardware.",
-          "Halstead — $30-$75/month for monitoring, plus $399-$799 hardware kits. 12-month minimum then month-to-month. Total 12-month cost: $360-$900 plus hardware.",
+          "ADT: $40-$60/month monitoring + $99-$199 install + 36-month contract. Total 36-month cost: $1,540-$2,360 plus equipment.",
+          "Vivint: $60-$100+/month combined hardware financing + monitoring under 5-year agreement. Total 5-year cost: $3,600-$6,000+ minimum.",
+          "Ring: $4-$20/month for Ring Protect, plus DIY hardware $60-$200/device. Total 36-month cost: $144-$720 plus hardware.",
+          "SimpliSafe: $19-$30/month for monitoring, plus $230-$500 hardware kits. Total 36-month cost: $684-$1,580 plus hardware.",
+          "Halstead: $30-$75/month for monitoring, plus $399-$799 hardware kits. 12-month minimum then month-to-month. Total 12-month cost: $360-$900 plus hardware.",
         ],
       },
       {
         type: "callout",
         title: "The hidden math of long contracts",
-        text: "A 36-month contract at $50/month locks you into $1,800. A 5-year Vivint contract at $80/month locks you into $4,800. Halstead's 12-month minimum at $50/month locks you into $600 — and then you can leave anytime without penalty. The contract length matters as much as the monthly price.",
+        text: "A 36-month contract at $50/month locks you into $1,800. A 5-year Vivint contract at $80/month locks you into $4,800. Halstead's 12-month minimum at $50/month locks you into $600, and then you can leave anytime without penalty. The contract length matters as much as the monthly price.",
       },
       {
         type: "heading",
@@ -128,7 +128,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "For Halstead specifically, the comparison usually goes like this: a 36-month ADT contract at $50/month plus $99 activation is $1,899 minimum. Halstead's equivalent (Premium tier $50/month for 12 months then month-to-month, with $399 hardware kit) is $999 in year one and you can keep going at $600/year after. ADT locks you in; Halstead earns your business each month.",
+        text: "For Halstead specifically, the comparison usually goes like this: a 36-month ADT contract at $50/month plus $99 activation is $1,899 minimum. Halstead's equivalent (Premium tier $50/month for 12 months then month-to-month, with $399 hardware kit) is $999 in year one and you can keep going at $600/year after. ADT locks you in. Halstead earns your business each month.",
       },
       {
         type: "heading",
@@ -146,7 +146,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "For a typical single-family home with 4-6 cameras, expect to pay $30-$75/month for monitoring (depending on tier) plus $400-$700 for hardware. Avoid contracts longer than 12 months. Avoid systems that bundle hardware financing into the monthly fee — they obscure the real numbers. Insist on hardware ownership rather than rental.",
+        text: "For a typical single-family home with 4-6 cameras, expect to pay $30-$75/month for monitoring (depending on tier) plus $400-$700 for hardware. Avoid contracts longer than 12 months. Avoid systems that bundle hardware financing into the monthly fee, as they obscure the real cost. Insist on hardware ownership rather than rental.",
       },
     ],
     faqs: [
@@ -173,7 +173,7 @@ export const RESOURCES: Record<string, Resource> = {
   "diy-vs-professional-installation": {
     slug: "diy-vs-professional-installation",
     title: "DIY vs Professional Home Security Installation",
-    metaTitle: "DIY vs Professional Home Security Installation — Which Is Right for You?",
+    metaTitle: "DIY vs Professional Home Security Installation: Which Is Right for You?",
     metaDescription:
       "DIY vs professional home security installation: time, cost, hardware quality, support, and long-term reliability compared. With recommendations based on your situation.",
     category: "diy-vs-pro",
@@ -234,12 +234,12 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "DIY systems save $99-$499 on installation. Professional systems save you 4-8 hours of work upfront and typically result in 30-50% fewer false alarms over the life of the system (according to industry data on motion sensor calibration). Over 5 years, the false alarm savings often exceed the professional installation premium — particularly if your municipality charges for false alarm dispatches ($50-$500 per incident in many cities).",
+        text: "DIY systems save $99-$499 on installation. Professional systems save you 4-8 hours of work upfront and typically result in 30-50% fewer false alarms over the life of the system (according to industry data on motion sensor calibration). Over 5 years, the false alarm savings often exceed the professional installation premium, particularly if your municipality charges for false alarm dispatches ($50-$500 per incident in many cities).",
       },
       {
         type: "callout",
         title: "Halstead's hybrid approach",
-        text: "Halstead is professional-install only, but offers ongoing self-service through the mobile app. You get expert installation upfront, then full self-service control of the system from your phone. The best of both worlds — professional setup plus DIY-style control.",
+        text: "Halstead is professional-install only, but offers ongoing self-service through the mobile app. You get expert installation upfront, then full self-service control of the system from your phone. The best of both worlds: professional setup plus DIY-style control.",
       },
       {
         type: "heading",
@@ -291,7 +291,7 @@ export const RESOURCES: Record<string, Resource> = {
   "how-to-choose-security-system": {
     slug: "how-to-choose-security-system",
     title: "How to Choose a Home Security System",
-    metaTitle: "How to Choose a Home Security System — Complete 2026 Buying Guide",
+    metaTitle: "How to Choose a Home Security System: Complete 2026 Buying Guide",
     metaDescription:
       "Complete buying guide for home security systems in 2026. Compare professional vs DIY, monitoring options, contract terms, smart features, and pricing. Decision framework included.",
     category: "buying-guide",
@@ -303,7 +303,7 @@ export const RESOURCES: Record<string, Resource> = {
     body: [
       {
         type: "paragraph",
-        text: "Most homeowners don't shop for security until they need it — after a break-in, a move, or a life event. By then, you're making decisions under pressure and the security companies know it. This guide takes you through every decision in order so you can make a thoughtful choice.",
+        text: "Most homeowners don't shop for security until they need it, typically after a break-in, a move, or a life event. By then, you're making decisions under pressure and the security companies know it. This guide takes you through every decision in order so you can make a thoughtful choice.",
       },
       {
         type: "heading",
@@ -334,7 +334,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "ADT, Brinks, Vivint, and other traditional security brands typically require 36-month or 60-month contracts. The 'discount' offered for the contract is usually less than the cost of being locked in. If your situation changes — you move, service drops, you find a better option — early termination fees can run thousands of dollars. Modern providers like Halstead, Ring, and SimpliSafe offer month-to-month or 12-month commitments instead.",
+        text: "ADT, Brinks, Vivint, and other traditional security brands typically require 36-month or 60-month contracts. The 'discount' offered for the contract is usually less than the cost of being locked in. If your situation changes (you move, service drops, you find a better option), early termination fees can run thousands of dollars. Modern providers like Halstead, Ring, and SimpliSafe offer month-to-month or 12-month commitments instead.",
       },
       {
         type: "heading",
@@ -390,7 +390,7 @@ export const RESOURCES: Record<string, Resource> = {
     faqs: [
       {
         q: "What's the most important factor in choosing a security system?",
-        a: "Honestly: contract flexibility. The longer the contract, the more locked-in you are when your situation changes — and your situation will change. A 12-month contract that converts to month-to-month is dramatically more valuable than a 36-month contract with a slightly lower monthly fee.",
+        a: "Honestly: contract flexibility. The longer the contract, the more locked-in you are when your situation changes, and your situation will change. A 12-month contract that converts to month-to-month is dramatically more valuable than a 36-month contract with a slightly lower monthly fee.",
       },
       {
         q: "Should I prioritize cameras or alarm sensors?",
@@ -410,8 +410,8 @@ export const RESOURCES: Record<string, Resource> = {
 
   "home-security-statistics": {
     slug: "home-security-statistics",
-    title: "Home Security Statistics — 2026 Edition",
-    metaTitle: "Home Security Statistics 2026 — Burglary, Crime, & Industry Data",
+    title: "Home Security Statistics: 2026 Edition",
+    metaTitle: "Home Security Statistics 2026: Burglary, Crime, & Industry Data",
     metaDescription:
       "Latest 2026 home security statistics: burglary rates, deterrence effectiveness, false alarm data, monitoring response times, and industry pricing trends. Sourced and dated.",
     category: "statistics",
@@ -419,11 +419,11 @@ export const RESOURCES: Record<string, Resource> = {
     updatedDate: "2026-05-06",
     readingTime: "8 min read",
     excerpt:
-      "Home security industry statistics — what's actually happening with burglary rates, deterrence, false alarms, and customer behavior in 2026. Useful for homeowners researching whether security is worth it.",
+      "Home security industry statistics: what's actually happening with burglary rates, deterrence, false alarms, and customer behavior in 2026. Useful for homeowners researching whether security is worth it.",
     body: [
       {
         type: "paragraph",
-        text: "The security industry's marketing leans on scary statistics — 'a burglary every 26 seconds' is a perennial favorite. The actual data is more nuanced and, in some areas, more reassuring than industry messaging suggests. Here's what's actually happening.",
+        text: "The security industry\u2019s marketing leans on scary statistics. \u201CA burglary every 26 seconds\u201D is a perennial favorite. The actual data is more nuanced and, in some areas, more reassuring than industry messaging suggests. Here\u2019s what\u2019s actually happening.",
       },
       {
         type: "heading",
@@ -450,7 +450,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "Approximately 94-98% of all residential alarm activations are false alarms — caused by user error, pet motion, environmental triggers, or sensor placement issues. Many municipalities now charge homeowners $50-$500 per false alarm dispatch, and after multiple false alarms, police prioritize alarm calls lower in their dispatch queue. Two-camera verification (Halstead's approach) can reduce false alarms by 70%+, dramatically improving the effective response from professional monitoring.",
+        text: "Approximately 94-98% of all residential alarm activations are false alarms, caused by user error, pet motion, environmental triggers, or sensor placement issues. Many municipalities now charge homeowners $50-$500 per false alarm dispatch, and after multiple false alarms, police prioritize alarm calls lower in their dispatch queue. Two-camera verification (Halstead's approach) can reduce false alarms by 70%+, dramatically improving the effective response from professional monitoring.",
       },
       {
         type: "heading",
@@ -459,7 +459,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "When a real alarm fires through professional monitoring, central station operators typically attempt customer contact within 30-90 seconds. If contact fails, dispatch to local police occurs within 2-5 minutes. Local police response times vary wildly by jurisdiction — typical response times range from 5 minutes (urban) to 25+ minutes (rural). Verified-by-camera dispatch (Halstead's Pro Monitoring tier) typically results in faster response because police know the threat is real, not a typical false alarm.",
+        text: "When a real alarm fires through professional monitoring, central station operators typically attempt customer contact within 30-90 seconds. If contact fails, dispatch to local police occurs within 2-5 minutes. Local police response times vary wildly by jurisdiction, with typical response times range from 5 minutes (urban) to 25+ minutes (rural). Verified-by-camera dispatch (Halstead's Pro Monitoring tier) typically results in faster response because police know the threat is real, not a typical false alarm.",
       },
       {
         type: "heading",
@@ -477,7 +477,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "Roughly 30% of US homes have some form of installed security system as of 2026, up from 17% in 2010. Adoption is highest in suburban single-family homes (40%+), lower in apartments and rentals (15-25%). Spanish-speaking households are an underserved market — adoption rates are 30-40% lower than the general population, primarily due to lack of bilingual sales and support from major brands. Halstead's bilingual dealer program targets this gap.",
+        text: "Roughly 30% of US homes have some form of installed security system as of 2026, up from 17% in 2010. Adoption is highest in suburban single-family homes (40%+), lower in apartments and rentals (15-25%). Spanish-speaking households are an underserved market, with adoption rates 30-40% lower than the general population, primarily due to lack of bilingual sales and support from major brands. Halstead's bilingual dealer program targets this gap.",
       },
       {
         type: "heading",
@@ -495,7 +495,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         type: "paragraph",
-        text: "Statistics in this article are drawn from FBI Uniform Crime Reporting data, Bureau of Justice Statistics, the Security Industry Association annual industry reports, academic studies on burglar behavior (most notably the University of North Carolina at Charlotte study on residential break-in patterns), and industry surveys from major insurance carriers. Specific numbers vary by year and source — figures cited reflect rough industry consensus as of 2026.",
+        text: "Statistics in this article are drawn from FBI Uniform Crime Reporting data, Bureau of Justice Statistics, the Security Industry Association annual industry reports, academic studies on burglar behavior (most notably the University of North Carolina at Charlotte study on residential break-in patterns), and industry surveys from major insurance carriers. Specific numbers vary by year and source. Figures cited reflect rough industry consensus as of 2026.",
       },
     ],
     faqs: [
@@ -509,7 +509,7 @@ export const RESOURCES: Record<string, Resource> = {
       },
       {
         q: "Why are false alarm rates so high?",
-        a: "Most false alarms are user error (incorrectly entered codes, family members not knowing the system is armed, pets activating motion sensors) or environmental triggers (wind, weather, animals). Two-camera verification — requiring a second sensor to confirm before alarming — reduces the false alarm rate dramatically by filtering out single-sensor noise events.",
+        a: "Most false alarms are user error (incorrectly entered codes, family members not knowing the system is armed, pets activating motion sensors) or environmental triggers (wind, weather, animals). Two-camera verification (requiring a second sensor to confirm before alarming) reduces the false alarm rate dramatically by filtering out single-sensor noise events.",
       },
     ],
     relatedResources: [

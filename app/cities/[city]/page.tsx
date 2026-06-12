@@ -123,7 +123,7 @@ export async function generateMetadata({
   if (!data) return {};
 
   return {
-    title: `Home Security in ${data.name}, ${data.state} — Halstead Security`,
+    title: `Home Security in ${data.name}, ${data.state} | Halstead`,
     description: `Professional home security in ${data.name}, ${data.state} from $30/month. Locally installed by state-licensed Halstead dealers serving ${data.neighborhoods.slice(0, 3).join(", ")} and beyond. No 36-month contracts. Free quote.`,
     alternates: { canonical: `/cities/${city}` },
     openGraph: {
@@ -194,7 +194,7 @@ export default async function CityPage({
             </h1>
             <p className="body-large mt-6">
               Professional home security in {data.name}
-              {data.nickname && ` — ${data.nickname}`} — installed by
+              {data.nickname && ` (${data.nickname})`}, installed by
               state-licensed local Halstead dealers. Plans from $30/month, no
               36-month contracts, real local technicians.
             </p>
@@ -275,7 +275,7 @@ export default async function CityPage({
             </h2>
             <p className="body-large mt-6">
               {data.name} customers choose between three plans. Pricing is the
-              same across all our service areas — no zip code surcharges.
+              same across all our service areas. No zip code surcharges.
             </p>
           </div>
 

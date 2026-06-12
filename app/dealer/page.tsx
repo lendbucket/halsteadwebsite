@@ -5,12 +5,12 @@ import { generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Become a Halstead Dealer — $15,000 Founding Territory",
+  title: "Become a Halstead Dealer | $15K Founding Territory",
   description:
     "Own a Halstead Security territory in your city. Founding dealer fee: $15,000 one-time. Includes brand license, software platform, state licensing wizard, training, and 90-day support. First 25 dealers only.",
   alternates: { canonical: "/dealer" },
   openGraph: {
-    title: "Own a Halstead Security Territory — $15,000 Founding Offer",
+    title: "Own a Halstead Security Territory | $15K Founding Offer",
     description:
       "Run your own security business under a brand customers trust. Software, training, and back-office included. First 25 dealers locked at the founding rate.",
   },
@@ -45,7 +45,7 @@ const includes = [
   {
     icon: <Check className="h-6 w-6" />,
     title: "Marketing kit",
-    description: "Templates, signs, ads, collateral — professionally designed, ready to deploy.",
+    description: "Templates, signs, ads, collateral. Professionally designed, ready to deploy.",
   },
   {
     icon: <Check className="h-6 w-6" />,
@@ -60,7 +60,7 @@ const includes = [
   {
     icon: <Check className="h-6 w-6" />,
     title: "5 starter inventory kits",
-    description: "Free at platform cost — saves $2,000 to get you to your first installs.",
+    description: "Free at platform cost, saving $2,000 to get you to your first installs.",
   },
   {
     icon: <Check className="h-6 w-6" />,
@@ -96,7 +96,7 @@ const dealerFaqs = [
   },
   {
     q: "Can I finance the $15,000?",
-    a: "Yes. Reyna Title (a sister company) offers founding dealer financing for qualified applicants — typically 12 to 24 month terms at competitive rates.",
+    a: "Yes. Reyna Title (a sister company) offers founding dealer financing for qualified applicants, typically 12 to 24 month terms at competitive rates.",
   },
   {
     q: "Is Halstead a franchise?",
@@ -124,7 +124,7 @@ export default function DealerPage() {
               Halstead Security is building a national network of independent,
               locally-owned dealers. We&apos;re looking for entrepreneurs,
               established alarm operators, and home services pros who want to
-              run their own security business — under a brand customers trust,
+              run their own security business under a brand customers trust,
               with the software and back-office to scale.
             </p>
 
@@ -181,6 +181,7 @@ export default function DealerPage() {
               trade, you have everything you need to run a Halstead territory
               except the brand, the software, and the playbook. We provide all
               three.
+
             </p>
           </div>
         </div>

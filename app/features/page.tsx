@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { FEATURES_LIST } from "@/lib/features";
 
 export const metadata: Metadata = {
-  title: "Features — Smart Home Security That Works",
+  title: "Features: Smart Home Security That Works",
   description:
     "Every Halstead feature explained: AI motion classification, two-camera verification, vacation mode, family check-ins, smart escalation, cellular backup, and more. Deep technical detail on each.",
   alternates: { canonical: "/features" },

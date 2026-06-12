@@ -5,7 +5,7 @@ import { generateProductSchema, generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plans & Pricing — Home Security from $30/month",
+  title: "Plans & Pricing: Home Security from $30/month",
   description:
     "Halstead Security plans start at $30/month. No 36-month contracts. Compare Basic ($30), Premium ($50), and Pro Monitoring ($75). Hardware kits from $399. 0% financing through Reyna Title.",
   alternates: { canonical: "/plans" },
@@ -76,7 +76,7 @@ const compareRows = [
 const plansFaqs = [
   {
     q: "What's the difference between Basic, Premium, and Pro Monitoring?",
-    a: "Basic ($30/month) covers up to 4 cameras with 7-day cloud storage and motion alerts — you self-monitor through the app. Premium ($50/month) adds AI smart filters, vacation mode, visitor passes, longer storage, and supports up to 8 cameras. Pro Monitoring ($75/month) adds 24/7 professional dispatch through a UL-listed central station and a cellular backup hub.",
+    a: "Basic ($30/month) covers up to 4 cameras with 7-day cloud storage and motion alerts, and you self-monitor through the app. Premium ($50/month) adds AI smart filters, vacation mode, visitor passes, longer storage, and supports up to 8 cameras. Pro Monitoring ($75/month) adds 24/7 professional dispatch through a UL-listed central station and a cellular backup hub.",
   },
   {
     q: "How much do the cameras cost?",
@@ -88,7 +88,7 @@ const plansFaqs = [
   },
   {
     q: "What if I move?",
-    a: "Halstead moves with you. Your local Halstead team will uninstall and reinstall at your new address (within our service area) for a flat fee. The equipment is yours — you bought it.",
+    a: "Halstead moves with you. Your local Halstead team will uninstall and reinstall at your new address (within our service area) for a flat fee. The equipment is yours because you bought it.",
   },
   {
     q: "What happens if I cancel?",

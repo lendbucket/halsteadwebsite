@@ -5,7 +5,7 @@ import { generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dealer FAQ — Halstead Security Territory Program",
+  title: "Dealer FAQ: Halstead Security Territory Program",
   description:
     "Detailed answers about becoming a Halstead Security dealer: territory program, $15,000 founding fee, state licensing, training, dealer economics, and program structure.",
   alternates: { canonical: "/dealer/faq" },
@@ -21,11 +21,11 @@ const sections = [
       },
       {
         q: "Is Halstead a franchise?",
-        a: "No. Halstead is structured as a software platform with a trademark license, not a franchise. This is a deliberate choice — it means more flexibility for dealers, less regulatory burden for both parties, and faster path to launch.",
+        a: "No. Halstead is structured as a software platform with a trademark license, not a franchise. This is a deliberate choice. It means more flexibility for dealers, less regulatory burden for both parties, and faster path to launch.",
       },
       {
         q: "How does Halstead make money?",
-        a: "Three ways: the one-time territory fee from each dealer, a monthly platform fee from each dealer, and a 30% share of customer subscription revenue. We make money when our dealers make money — incentives are aligned.",
+        a: "Three ways: the one-time territory fee from each dealer, a monthly platform fee from each dealer, and a 30% share of customer subscription revenue. We make money when our dealers make money. Incentives are aligned.",
       },
       {
         q: "What does a dealer actually do day to day?",
@@ -54,7 +54,7 @@ const sections = [
       },
       {
         q: "Can I finance the $15,000?",
-        a: "Yes. Reyna Title (a sister company under Reyna Holdings) offers founding dealer financing for qualified applicants — typically 12 to 24 month terms at competitive rates. Apply with your dealer application.",
+        a: "Yes. Reyna Title (a sister company under Reyna Holdings) offers founding dealer financing for qualified applicants, typically 12 to 24 month terms at competitive rates. Apply with your dealer application.",
       },
     ],
   },
@@ -201,7 +201,7 @@ export default function DealerFAQPage() {
             >
               dealers@halsteadsecurity.com
             </a>{" "}
-            — a real person responds within 1 business day.
+            and a real person responds within 1 business day.
           </p>
           <Link href="/dealer/apply" className="mt-10 btn-gold btn-large group inline-flex">
             Start your application

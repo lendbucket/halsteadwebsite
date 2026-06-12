@@ -3,7 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "White-Label Security Platform — Run Your Brand on Halstead",
+  title: "White-Label Security Platform | Run Your Brand",
   description:
     "Operate a security business under your own brand using Halstead's full platform, hardware sourcing, and back-office. Three tiers from $5,000 setup. For established alarm operators and home services brands.",
   alternates: { canonical: "/white-label" },

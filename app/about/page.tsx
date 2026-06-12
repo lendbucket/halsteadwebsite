@@ -45,7 +45,7 @@ export default function AboutPage() {
           </p>
           <p className="text-xl font-semibold italic text-navy">
             We&apos;re trying to be the security company your parents would
-            have used — supercharged with the tools and software customers
+            have used, supercharged with the tools and software customers
             expect today.
           </p>
         </div>
@@ -90,11 +90,11 @@ export default function AboutPage() {
               operating group based in Corpus Christi, Texas.
             </p>
             <ul className="ml-6 list-disc space-y-2">
-              <li><span className="font-semibold">Salon Envy USA</span> — salon franchise</li>
-              <li><span className="font-semibold">Lone Star Contracting Services</span> — commercial landscaping</li>
-              <li><span className="font-semibold">Reyna Title</span> — private mortgage lending</li>
-              <li><span className="font-semibold">FieldPermit</span> — construction compliance</li>
-              <li><span className="font-semibold">Halstead Security</span> — the company you&apos;re reading about</li>
+              <li><span className="font-semibold">Salon Envy USA</span>, salon franchise</li>
+              <li><span className="font-semibold">Lone Star Contracting Services</span>, commercial landscaping</li>
+              <li><span className="font-semibold">Reyna Title</span>, private mortgage lending</li>
+              <li><span className="font-semibold">FieldPermit</span>, construction compliance</li>
+              <li><span className="font-semibold">Halstead Security</span>, the company you&apos;re reading about</li>
             </ul>
             <p>
               Reyna ventures share a common thesis: build vertically integrated

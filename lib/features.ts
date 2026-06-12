@@ -36,7 +36,7 @@ export const FEATURES: Record<string, Feature> = {
     slug: "two-camera-verification",
     name: "Two-Camera Verification",
     category: "smart-filtering",
-    metaTitle: "Two-Camera Verification — How Halstead Cuts False Alarms 70%",
+    metaTitle: "Two-Camera Verification: How Halstead Cuts False Alarms 70%",
     metaDescription:
       "Halstead's two-camera verification requires corroboration from a second camera or sensor before triggering an alarm. Cuts false alarms by an estimated 70%. Learn how it works.",
     hero: {
@@ -52,13 +52,13 @@ export const FEATURES: Record<string, Feature> = {
         step: 1,
         title: "First sensor detects motion",
         description:
-          "Sensor A — typically a camera with motion detection — picks up movement in its field of view. The system marks this as a 'first signal' but does not yet trigger an alarm.",
+          "Sensor A (typically a camera with motion detection) picks up movement in its field of view. The system marks this as a 'first signal' but does not yet trigger an alarm.",
       },
       {
         step: 2,
         title: "System looks for corroboration",
         description:
-          "Within a configurable time window (typically 30-60 seconds), the system checks whether sensor B — a different camera covering the same area, a door/window contact, or a glass break sensor — also detects activity consistent with a real intrusion.",
+          "Within a configurable time window (typically 30-60 seconds), the system checks whether sensor B (a different camera covering the same area, a door/window contact, or a glass break sensor) also detects activity consistent with a real intrusion.",
       },
       {
         step: 3,
@@ -70,11 +70,11 @@ export const FEATURES: Record<string, Feature> = {
         step: 4,
         title: "If no corroboration, single signal logs but doesn't alarm",
         description:
-          "If sensor B does not confirm within the time window, the original first signal still gets logged in your timeline (so you can review it), but no alarm is triggered. This is what kills 70% of false alarms — single-sensor noise like wind blowing leaves, animals crossing, or shadows from passing cars never escalate.",
+          "If sensor B does not confirm within the time window, the original first signal still gets logged in your timeline (so you can review it), but no alarm is triggered. This is what kills 70% of false alarms. Single-sensor noise like wind blowing leaves, animals crossing, or shadows from passing cars never escalate.",
       },
     ],
     whyItMatters:
-      "False alarms are the single biggest reason customers cancel residential security service. Industry data suggests that 94-98% of all residential alarm activations are false alarms — caused by wind, animals, shadows, pets, or mis-placed motion sensors. False alarms also cost real money: many cities now charge $50-$500 per false alarm dispatch fee, and after a few false alarms, police prioritize your alarms lower in their dispatch queue. By requiring two-sensor corroboration, Halstead dramatically reduces the false alarm rate without reducing detection of real intrusion events. The result: you actually trust the alerts when they come, and on the Pro Monitoring tier, dispatch happens faster because you're not crying wolf.",
+      "False alarms are the single biggest reason customers cancel residential security service. Industry data suggests that 94-98% of all residential alarm activations are false alarms, caused by wind, animals, shadows, pets, or mis-placed motion sensors. False alarms also cost real money: many cities now charge $50-$500 per false alarm dispatch fee, and after a few false alarms, police prioritize your alarms lower in their dispatch queue. By requiring two-sensor corroboration, Halstead dramatically reduces the false alarm rate without reducing detection of real intrusion events. The result: you actually trust the alerts when they come, and on the Pro Monitoring tier, dispatch happens faster because you're not crying wolf.",
     technicalDetails:
       "Two-camera verification requires careful sensor placement to work effectively. During Halstead installation, your local technician maps your property and configures sensor pairs that have overlapping or adjacent coverage zones. For a typical single-family home, this means front-door camera + doorbell, backyard camera + back-door contact sensor, garage camera + interior-from-garage door sensor, and similar pairings throughout. The system's logic engine handles edge cases like pet motion, time-of-day adjustments, and seasonal variations.",
     comparisonToCompetitors:
@@ -82,7 +82,7 @@ export const FEATURES: Record<string, Feature> = {
     faqs: [
       {
         q: "Does two-camera verification mean I miss real intrusions?",
-        a: "No. The verification window is short (configurable from 30 to 60 seconds), and any real intrusion will activate multiple sensors as the intruder moves through the property. The pattern of an actual break-in (front door triggered, then motion in foyer, then motion in living room) is exactly what verification is designed to catch — quickly and reliably.",
+        a: "No. The verification window is short (configurable from 30 to 60 seconds), and any real intrusion will activate multiple sensors as the intruder moves through the property. The pattern of an actual break-in (front door triggered, then motion in foyer, then motion in living room) is exactly what verification is designed to catch, quickly and reliably.",
       },
       {
         q: "What if I only have one camera covering an area?",
@@ -105,7 +105,7 @@ export const FEATURES: Record<string, Feature> = {
     slug: "ai-motion-classification",
     name: "AI Motion Classification",
     category: "smart-filtering",
-    metaTitle: "AI Motion Detection — Person, Vehicle, Package, Animal Recognition",
+    metaTitle: "AI Motion Detection: Person, Vehicle, Package, Animal Recognition",
     metaDescription:
       "Halstead's AI motion classification distinguishes person, vehicle, package, and animal motion. Subscribe only to the categories that matter to you. Cuts notification noise dramatically.",
     hero: {
@@ -115,7 +115,7 @@ export const FEATURES: Record<string, Feature> = {
         "Person, vehicle, package, animal, or other. Halstead subscribes you only to the categories you care about. Person at 3 a.m.? Notify. Squirrel at 3 a.m.? Skip.",
     },
     whatItIs:
-      "AI motion classification is a real-time computer vision system that identifies what kind of object triggered the motion — distinguishing humans from cars from packages from animals from environmental motion (wind, shadows, lights). Halstead applies this AI to every motion event before deciding whether to notify you, so you get fewer but more relevant alerts.",
+      "AI motion classification is a real-time computer vision system that identifies what kind of object triggered the motion, distinguishing humans from cars from packages from animals from environmental motion (wind, shadows, lights). Halstead applies this AI to every motion event before deciding whether to notify you, so you get fewer but more relevant alerts.",
     howItWorks: [
       {
         step: 1,
@@ -133,7 +133,7 @@ export const FEATURES: Record<string, Feature> = {
         step: 3,
         title: "System checks your subscription preferences",
         description:
-          "Each motion category has its own notification preference per camera, per time of day. You can subscribe to person alerts only, or person + package, or all categories — whatever fits your needs.",
+          "Each motion category has its own notification preference per camera, per time of day. You can subscribe to person alerts only, or person + package, or all categories, whatever fits your needs.",
       },
       {
         step: 4,
@@ -143,7 +143,7 @@ export const FEATURES: Record<string, Feature> = {
       },
     ],
     whyItMatters:
-      "Without AI classification, motion detection becomes useless because you get notifications for every car passing, every shadow, every animal. Most users disable motion alerts within weeks. With AI classification, your alerts become trustworthy — you only get notified for events you actually care about, which means you actually pay attention when alerts come through.",
+      "Without AI classification, motion detection becomes useless because you get notifications for every car passing, every shadow, every animal. Most users disable motion alerts within weeks. With AI classification, your alerts become trustworthy. You only get notified for events you actually care about, which means you actually pay attention when alerts come through.",
     technicalDetails:
       "Halstead uses an on-device computer vision model running on the Halstead Hub for the fastest possible classification (typically 100-200ms). Cloud-based fallback handles edge cases. The model is trained on millions of labeled images from residential security contexts and continues to improve through ongoing model updates. Classifications include: person (with rough size estimation), vehicle (car/truck/motorcycle), package (placed and removed events), animals (dogs, cats, deer, raccoons, squirrels, etc.), and other (unclassified motion).",
     comparisonToCompetitors:
@@ -151,7 +151,7 @@ export const FEATURES: Record<string, Feature> = {
     faqs: [
       {
         q: "How accurate is the AI classification?",
-        a: "Person and vehicle classification typically achieves 95%+ accuracy in normal lighting. Package detection (placement vs removal) is more nuanced — typically 85-92% accurate depending on lighting and camera angle. Animal classification varies by species. Halstead's model is updated regularly, so accuracy improves over time.",
+        a: "Person and vehicle classification typically achieves 95%+ accuracy in normal lighting. Package detection (placement vs removal) is more nuanced, typically 85-92% accurate depending on lighting and camera angle. Animal classification varies by species. Halstead's model is updated regularly, so accuracy improves over time.",
       },
       {
         q: "Does this work in the dark?",
@@ -159,7 +159,7 @@ export const FEATURES: Record<string, Feature> = {
       },
       {
         q: "Can the AI recognize my specific family members?",
-        a: "Yes — through the Family Check-Ins feature. Pre-register household members at install with consent, and the AI can distinguish family members from strangers. This enables features like 'Sarah is home, 3:47pm' notifications without triggering alarms.",
+        a: "Yes, through the Family Check-Ins feature. Pre-register household members at install with consent, and the AI can distinguish family members from strangers. This enables features like 'Sarah is home, 3:47pm' notifications without triggering alarms.",
       },
       {
         q: "Is the AI processing happening in the cloud or on my device?",
@@ -174,9 +174,9 @@ export const FEATURES: Record<string, Feature> = {
     slug: "vacation-mode",
     name: "Vacation Mode",
     category: "automation",
-    metaTitle: "Vacation Mode — Automated Home Security While You're Away",
+    metaTitle: "Vacation Mode: Automated Home Security While You're Away",
     metaDescription:
-      "Halstead's vacation mode increases sensitivity, sets longer cloud retention, sends daily digests, and alerts your trusted neighbors — all from one toggle. Built for the way families actually travel.",
+      "Halstead's vacation mode increases sensitivity, sets longer cloud retention, sends daily digests, and alerts your trusted neighbors, all from one toggle. Built for the way families actually travel.",
     hero: {
       eyebrow: "Automation",
       title: "Vacation Mode",
@@ -208,7 +208,7 @@ export const FEATURES: Record<string, Feature> = {
         step: 4,
         title: "Daily digest emails kick in",
         description:
-          "Instead of getting a barrage of individual notifications, you receive a single daily digest email summarizing all activity at your home — visits, motion events, package deliveries, weather alerts. Less notification noise, more context.",
+          "Instead of getting a barrage of individual notifications, you receive a single daily digest email summarizing all activity at your home: visits, motion events, package deliveries, weather alerts. Less notification noise, more context.",
       },
       {
         step: 5,
@@ -224,7 +224,7 @@ export const FEATURES: Record<string, Feature> = {
       },
     ],
     whyItMatters:
-      "Most security systems force you to manually adjust dozens of settings before you leave on a trip and then remember to undo them when you return. Most people don't bother, which means their security stays in everyday-mode while they're away — the opposite of what they want. Halstead's vacation mode handles the reconfiguration automatically with one tap, which means people actually use it.",
+      "Most security systems force you to manually adjust dozens of settings before you leave on a trip and then remember to undo them when you return. Most people don't bother, which means their security stays in everyday-mode while they're away, the opposite of what they want. Halstead's vacation mode handles the reconfiguration automatically with one tap, which means people actually use it.",
     faqs: [
       {
         q: "Can I schedule vacation mode for future dates?",
@@ -240,7 +240,7 @@ export const FEATURES: Record<string, Feature> = {
       },
       {
         q: "Does vacation mode pause my regular routines?",
-        a: "Visitor passes for cleaners and contractors continue working normally — they're scheduled separately. If you have routine deliveries or pet sitters, you can configure them to operate even during vacation mode.",
+        a: "Visitor passes for cleaners and contractors continue working normally. They're scheduled separately. If you have routine deliveries or pet sitters, you can configure them to operate even during vacation mode.",
       },
     ],
     availableOn: ["Premium", "Pro Monitoring"],
@@ -251,7 +251,7 @@ export const FEATURES: Record<string, Feature> = {
     slug: "visitor-pass",
     name: "Visitor Pass",
     category: "automation",
-    metaTitle: "Visitor Pass — Time-Boxed Access for Cleaners and Contractors",
+    metaTitle: "Visitor Pass: Time-Boxed Access for Cleaners and Contractors",
     metaDescription:
       "Halstead's visitor pass system creates time-boxed access windows for cleaners, contractors, dog walkers, and visitors. Records activity but doesn't blast you with alerts during their pre-defined window.",
     hero: {
@@ -261,7 +261,7 @@ export const FEATURES: Record<string, Feature> = {
         "Generate a visitor pass for your weekly cleaner, dog walker, or in-laws. Records video for your archive but doesn't blast you with alerts during their pre-defined window.",
     },
     whatItIs:
-      "A visitor pass is a time-boxed authorization that tells your Halstead system 'someone authorized is going to be at the property between these times — record everything but don't alarm me about it.' It solves the everyday problem of knowing the cleaner is coming and not wanting your phone to blow up with motion alerts every time they move from one room to another.",
+      "A visitor pass is a time-boxed authorization that tells your Halstead system 'someone authorized is going to be at the property between these times. Record everything but don't alarm me about it.' It solves the everyday problem of knowing the cleaner is coming and not wanting your phone to blow up with motion alerts every time they move from one room to another.",
     howItWorks: [
       {
         step: 1,
@@ -285,19 +285,19 @@ export const FEATURES: Record<string, Feature> = {
         step: 4,
         title: "Recurring passes for repeat visitors",
         description:
-          "Set up recurring visitor passes for weekly cleaners, biweekly dog walkers, monthly maintenance — they automatically activate and deactivate without you having to remember to toggle them.",
+          "Set up recurring visitor passes for weekly cleaners, biweekly dog walkers, monthly maintenance. They automatically activate and deactivate without you having to remember to toggle them.",
       },
     ],
     whyItMatters:
-      "Without visitor passes, you face a bad tradeoff: either disable alerts entirely while expected visitors are at your home (and miss real events), or let the alerts blow up your phone every time they move (and get conditioned to ignore your security alerts). Visitor passes solve this with surgical precision — alerts off for known activity, alerts on for unknown activity.",
+      "Without visitor passes, you face a bad tradeoff: either disable alerts entirely while expected visitors are at your home (and miss real events), or let the alerts blow up your phone every time they move (and get conditioned to ignore your security alerts). Visitor passes solve this with surgical precision: alerts off for known activity, alerts on for unknown activity.",
     faqs: [
       {
         q: "Does the visitor see anything different?",
-        a: "No. Visitor passes are entirely on Halstead's backend — they don't change anything visible to the visitor or require them to use any app or code.",
+        a: "No. Visitor passes are entirely on Halstead's backend. They don't change anything visible to the visitor or require them to use any app or code.",
       },
       {
         q: "Can I see what happened during a visitor pass window?",
-        a: "Yes. All activity during a visitor pass window is recorded normally to your video timeline — the only thing suppressed is push notifications. Review footage anytime you want.",
+        a: "Yes. All activity during a visitor pass window is recorded normally to your video timeline. The only thing suppressed is push notifications. Review footage anytime you want.",
       },
       {
         q: "Can I extend a visitor pass if my cleaner runs long?",
@@ -316,14 +316,14 @@ export const FEATURES: Record<string, Feature> = {
     slug: "family-check-ins",
     name: "Family Check-Ins",
     category: "automation",
-    metaTitle: "Family Check-Ins — Smart Notifications When Family Arrives Home",
+    metaTitle: "Family Check-Ins: Smart Notifications When Family Arrives Home",
     metaDescription:
       "Halstead's family check-ins recognize household members and send 'Sarah is home' notifications without triggering alarms. Built for households with kids, teens, or shift workers.",
     hero: {
       eyebrow: "Automation",
       title: "Family Check-Ins",
       subtitle:
-        "Pre-register household members at install. When your kids come home from school, Halstead recognizes them and sends a 'Sarah is home, 3:47pm' notification — without triggering a scary alarm.",
+        "Pre-register household members at install. When your kids come home from school, Halstead recognizes them and sends a 'Sarah is home, 3:47pm' notification, without triggering a scary alarm.",
     },
     whatItIs:
       "Family check-ins use Halstead's AI to recognize pre-registered household members and send positive arrival notifications instead of alarm-style intrusion alerts. The feature is designed for households with kids who come home from school, teens with after-school schedules, or family members on shift work.",
@@ -332,7 +332,7 @@ export const FEATURES: Record<string, Feature> = {
         step: 1,
         title: "Pre-register family members",
         description:
-          "During or after installation, add household members to your account with reference photos. Halstead's AI uses the photos to learn each person's appearance for recognition. Reference photos are processed once and discarded — only the trained model parameters are stored.",
+          "During or after installation, add household members to your account with reference photos. Halstead's AI uses the photos to learn each person's appearance for recognition. Reference photos are processed once and discarded. Only the trained model parameters are stored.",
       },
       {
         step: 2,
@@ -358,7 +358,7 @@ export const FEATURES: Record<string, Feature> = {
     faqs: [
       {
         q: "What about privacy for my kids?",
-        a: "Family member reference photos are used to train the recognition model and then discarded. Only model parameters (effectively a mathematical fingerprint) are retained. The video itself follows your normal Halstead retention settings — typically 7, 30, or 60 days depending on your tier.",
+        a: "Family member reference photos are used to train the recognition model and then discarded. Only model parameters (effectively a mathematical fingerprint) are retained. The video itself follows your normal Halstead retention settings, typically 7, 30, or 60 days depending on your tier.",
       },
       {
         q: "How accurate is the recognition?",
@@ -366,11 +366,11 @@ export const FEATURES: Record<string, Feature> = {
       },
       {
         q: "Can I add temporary recognition for visitors?",
-        a: "Yes — for visitors expected to come and go for an extended period (a college kid home for the summer, a long-term houseguest), you can add them to the family list and remove them later. For shorter-term visitors, use Visitor Passes instead.",
+        a: "Yes. For visitors expected to come and go for an extended period (a college kid home for the summer, a long-term houseguest), you can add them to the family list and remove them later. For shorter-term visitors, use Visitor Passes instead.",
       },
       {
         q: "Does family check-in work with Halstead Watch?",
-        a: "Yes. Halstead Watch (the optional neighbor network feature) uses the same AI infrastructure but never shares family member identity with neighbors — only blurred motion events.",
+        a: "Yes. Halstead Watch (the optional neighbor network feature) uses the same AI infrastructure but never shares family member identity with neighbors. It only shares blurred motion events.",
       },
     ],
     availableOn: ["Premium", "Pro Monitoring"],
@@ -381,7 +381,7 @@ export const FEATURES: Record<string, Feature> = {
     slug: "storm-mode",
     name: "Storm Mode",
     category: "automation",
-    metaTitle: "Storm Mode — Automatic Weather-Based Alert Suppression",
+    metaTitle: "Storm Mode: Automatic Weather-Based Alert Suppression",
     metaDescription:
       "Halstead's storm mode automatically reduces motion sensitivity during severe weather alerts from the National Weather Service. No more 50 false alerts during a thunderstorm or hurricane.",
     hero: {
@@ -425,11 +425,11 @@ export const FEATURES: Record<string, Feature> = {
       },
     ],
     whyItMatters:
-      "During a severe thunderstorm, hurricane, or tornado event, traditional motion-detection security can fire dozens or hundreds of alerts as wind moves leaves, rain hits cameras, and debris flies through the field of view. After the first dozen alerts, users learn to ignore their security entirely — which means a real intrusion happening during the storm goes unnoticed. Storm mode prevents this alert fatigue without losing detection of real intrusions.",
+      "During a severe thunderstorm, hurricane, or tornado event, traditional motion-detection security can fire dozens or hundreds of alerts as wind moves leaves, rain hits cameras, and debris flies through the field of view. After the first dozen alerts, users learn to ignore their security entirely, which means a real intrusion happening during the storm goes unnoticed. Storm mode prevents this alert fatigue without losing detection of real intrusions.",
     faqs: [
       {
         q: "Will I miss real intrusions during storms?",
-        a: "No. Person and vehicle detection continues to function normally during storm mode — only environmental motion is suppressed. If a real intrusion happens during a storm, you'll still get the alert.",
+        a: "No. Person and vehicle detection continues to function normally during storm mode. Only environmental motion is suppressed. If a real intrusion happens during a storm, you'll still get the alert.",
       },
       {
         q: "What weather conditions trigger storm mode?",
@@ -452,7 +452,7 @@ export const FEATURES: Record<string, Feature> = {
     slug: "smart-escalation",
     name: "Smart Escalation",
     category: "response",
-    metaTitle: "Smart Escalation — Automatic Alert Chain to Police Dispatch",
+    metaTitle: "Smart Escalation: Automatic Alert Chain to Police Dispatch",
     metaDescription:
       "Halstead's smart escalation chain: push notification → automated phone call → emergency contact → professional dispatch. Each step happens only if the prior step doesn't get a response.",
     hero: {
@@ -462,7 +462,7 @@ export const FEATURES: Record<string, Feature> = {
         "Motion detected. Push notification sent. No response in 90 seconds? Halstead calls you. No answer? Calls your emergency contact. Pro Monitoring tier? Dispatches authorities.",
     },
     whatItIs:
-      "Smart escalation is the automated alert chain that connects an alarm event to the right responder — you, your emergency contact, or professional dispatch — depending on your response time. Instead of relying on a single notification that you might miss, smart escalation tries every channel in sequence until someone responds.",
+      "Smart escalation is the automated alert chain that connects an alarm event to the right responder (you, your emergency contact, or professional dispatch) depending on your response time. Instead of relying on a single notification that you might miss, smart escalation tries every channel in sequence until someone responds.",
     howItWorks: [
       {
         step: 1,
@@ -496,7 +496,7 @@ export const FEATURES: Record<string, Feature> = {
       },
     ],
     whyItMatters:
-      "A push notification is great when you're looking at your phone, but useless if you're sleeping, in a meeting, driving, or on a plane. Most home security 'alerts' fail in those exact situations — when a real intrusion is most likely and you're most likely to miss the notification. Smart escalation solves this by trying every channel in sequence until someone responds, with optional handoff to professional dispatch as the final fallback.",
+      "A push notification is great when you're looking at your phone, but useless if you're sleeping, in a meeting, driving, or on a plane. Most home security 'alerts' fail in those exact situations, when a real intrusion is most likely and you're most likely to miss the notification. Smart escalation solves this by trying every channel in sequence until someone responds, with optional handoff to professional dispatch as the final fallback.",
     faqs: [
       {
         q: "Can I customize the escalation timing?",
@@ -523,7 +523,7 @@ export const FEATURES: Record<string, Feature> = {
     slug: "cellular-backup",
     name: "Cellular Backup",
     category: "response",
-    metaTitle: "Cellular Backup Hub — Stay Online During Internet & Power Outages",
+    metaTitle: "Cellular Backup Hub: Stay Online During Internet & Power Outages",
     metaDescription:
       "Halstead's cellular backup hub keeps your security online during internet and power outages. LTE-M radio, 24-hour battery backup, included with Pro Monitoring tier.",
     hero: {
@@ -567,7 +567,7 @@ export const FEATURES: Record<string, Feature> = {
       },
     ],
     whyItMatters:
-      "The most common time for a residential break-in is during or after a storm or power outage — when traditional security systems are offline and homeowners are distracted. Cellular backup ensures your security never goes dark, even when everything else does.",
+      "The most common time for a residential break-in is during or after a storm or power outage, when traditional security systems are offline and homeowners are distracted. Cellular backup ensures your security never goes dark, even when everything else does.",
     faqs: [
       {
         q: "What carriers does the cellular backup use?",
@@ -582,8 +582,8 @@ export const FEATURES: Record<string, Feature> = {
         a: "During a wifi outage, the cellular connection prioritizes alarm signaling over video upload to conserve cellular bandwidth. Footage continues recording locally to the hub. When wifi restores, queued footage uploads to the cloud automatically.",
       },
       {
-        q: "What about the 24-hour battery — what if power is out longer?",
-        a: "After 24 hours on battery, the hub will send a low-battery alert and then enter a power-conservation mode that maintains alarm signaling but stops video processing. For most residential power outages this is more than sufficient — most outages resolve within 12-24 hours.",
+        q: "What about the 24-hour battery? What if power is out longer?",
+        a: "After 24 hours on battery, the hub will send a low-battery alert and then enter a power-conservation mode that maintains alarm signaling but stops video processing. For most residential power outages this is more than sufficient. Most outages resolve within 12-24 hours.",
       },
     ],
     availableOn: ["Pro Monitoring", "Premium add-on"],
@@ -594,17 +594,17 @@ export const FEATURES: Record<string, Feature> = {
     slug: "insurance-discount",
     name: "Insurance Discount Auto-Submission",
     category: "financial",
-    metaTitle: "Insurance Discount Auto-Submission — Save 5-15% on Home Insurance",
+    metaTitle: "Insurance Discount Auto-Submission: Save 5-15% on Home Insurance",
     metaDescription:
       "Halstead automatically generates and submits your monitoring certificate to your home insurance carrier annually. Most carriers offer 5-15% discounts on monitored homes.",
     hero: {
       eyebrow: "Financial",
       title: "Insurance Discount Auto-Submission",
       subtitle:
-        "Halstead generates the certificate of monitoring and auto-files with your home insurance carrier annually. Most carriers offer 5-15% discounts on monitored homes — Halstead does the paperwork so you actually get the discount.",
+        "Halstead generates the certificate of monitoring and auto-files with your home insurance carrier annually. Most carriers offer 5-15% discounts on monitored homes. Halstead does the paperwork so you actually get the discount.",
     },
     whatItIs:
-      "Most homeowners insurance policies include a discount for professionally monitored security systems — typically 5% to 15% of the annual premium. The discount requires you to submit a 'certificate of monitoring' (sometimes called an 'alarm certificate') from your security provider to your carrier annually. Most homeowners either don't know about the discount or never get around to submitting the paperwork. Halstead handles it automatically.",
+      "Most homeowners insurance policies include a discount for professionally monitored security systems, typically 5% to 15% of the annual premium. The discount requires you to submit a 'certificate of monitoring' (sometimes called an 'alarm certificate') from your security provider to your carrier annually. Most homeowners either don't know about the discount or never get around to submitting the paperwork. Halstead handles it automatically.",
     howItWorks: [
       {
         step: 1,
@@ -622,7 +622,7 @@ export const FEATURES: Record<string, Feature> = {
         step: 3,
         title: "Submitted to your carrier directly",
         description:
-          "Halstead transmits the certificate to your carrier through the appropriate channel — direct API, secure email, or mail depending on the carrier. You receive a confirmation when the submission is complete.",
+          "Halstead transmits the certificate to your carrier through the appropriate channel (direct API, secure email, or mail) depending on the carrier. You receive a confirmation when the submission is complete.",
       },
       {
         step: 4,
@@ -644,7 +644,7 @@ export const FEATURES: Record<string, Feature> = {
       },
       {
         q: "Will my insurance company actually honor it?",
-        a: "Yes — the discount is a standard feature of homeowners insurance policies and the certificate is the standard proof. Most carriers process it automatically when received. Occasionally a carrier will require additional documentation, in which case Halstead provides it on your behalf.",
+        a: "Yes. The discount is a standard feature of homeowners insurance policies and the certificate is the standard proof. Most carriers process it automatically when received. Occasionally a carrier will require additional documentation, in which case Halstead provides it on your behalf.",
       },
       {
         q: "What if I have multiple homes?",
@@ -659,17 +659,17 @@ export const FEATURES: Record<string, Feature> = {
     slug: "halstead-watch",
     name: "Halstead Watch",
     category: "automation",
-    metaTitle: "Halstead Watch — Opt-In Neighbor Network Without the Toxicity",
+    metaTitle: "Halstead Watch: Opt-In Neighbor Network Without the Toxicity",
     metaDescription:
       "Halstead Watch is an opt-in community alert network for Halstead customers in the same neighborhood. Share blurred motion events without the toxicity of Citizen or Nextdoor.",
     hero: {
       eyebrow: "Automation",
       title: "Halstead Watch",
       subtitle:
-        "Share blurred motion events with neighbors who are also Halstead customers. A community watch network without the toxicity of Citizen or Nextdoor — just neighbors helping neighbors stay aware.",
+        "Share blurred motion events with neighbors who are also Halstead customers. A community watch network without the toxicity of Citizen or Nextdoor. Just neighbors helping neighbors stay aware.",
     },
     whatItIs:
-      "Halstead Watch is an opt-in feature that creates a private neighbor network among Halstead customers in the same neighborhood. When suspicious activity occurs at one customer's property, blurred motion events can be shared with other Halstead customers nearby — alerting the whole street that something is happening without exposing identifying details.",
+      "Halstead Watch is an opt-in feature that creates a private neighbor network among Halstead customers in the same neighborhood. When suspicious activity occurs at one customer's property, blurred motion events can be shared with other Halstead customers nearby, alerting the whole street that something is happening without exposing identifying details.",
     howItWorks: [
       {
         step: 1,
@@ -703,7 +703,7 @@ export const FEATURES: Record<string, Feature> = {
       },
     ],
     whyItMatters:
-      "Existing neighborhood awareness apps (Citizen, Nextdoor, Ring's Neighbors) have become toxic — full of racial profiling, gossip, fear-mongering, and unverified claims. They make neighborhoods feel less safe rather than more. Halstead Watch is designed to provide the awareness benefit (knowing about suspicious activity nearby) without the social toxicity (no comments, no profiles, no community drama). Just blurred footage of verified suspicious events from one neighbor's camera shared privately with other Halstead customers.",
+      "Existing neighborhood awareness apps (Citizen, Nextdoor, Ring's Neighbors) have become toxic, full of racial profiling, gossip, fear-mongering, and unverified claims. They make neighborhoods feel less safe rather than more. Halstead Watch is designed to provide the awareness benefit (knowing about suspicious activity nearby) without the social toxicity (no comments, no profiles, no community drama). Just blurred footage of verified suspicious events from one neighbor's camera shared privately with other Halstead customers.",
     faqs: [
       {
         q: "What does 'blurred' mean exactly?",
@@ -711,7 +711,7 @@ export const FEATURES: Record<string, Feature> = {
       },
       {
         q: "Can I see who shared what?",
-        a: "No. Halstead Watch is anonymous between neighbors. You'll see 'A Halstead customer in your neighborhood reported suspicious activity' — never a specific person, address, or property. This is intentional, to prevent retaliation and protect privacy.",
+        a: "No. Halstead Watch is anonymous between neighbors. You'll see 'A Halstead customer in your neighborhood reported suspicious activity,' never a specific person, address, or property. This is intentional, to prevent retaliation and protect privacy.",
       },
       {
         q: "Can I opt out?",
