@@ -1,4 +1,4 @@
-# Halstead Security — Marketing Site v2
+# Halstead Security - Marketing Site v2
 
 Next.js 14 marketing site for Halstead Security with full SEO infrastructure.
 
@@ -8,8 +8,8 @@ Next.js 14 marketing site for Halstead Security with full SEO infrastructure.
 - **Real CTAs** on every page with destination-specific tracking parameters
 - **Multi-step dealer application** at `/dealer/apply` with progress indicator
 - **SEO infrastructure**:
-  - `sitemap.xml` — dynamic, includes all pages plus state and city templates
-  - `robots.txt` — allows GPTBot and Googlebot, references sitemap
+  - `sitemap.xml` - dynamic, includes all pages plus state and city templates
+  - `robots.txt` - allows GPTBot and Googlebot, references sitemap
   - JSON-LD structured data: Organization, LocalBusiness, FAQPage, Product, BreadcrumbList
   - Per-page `Metadata` exports with title, description, canonical, Open Graph
   - Semantic HTML throughout for accessibility and crawler comprehension
@@ -17,7 +17,7 @@ Next.js 14 marketing site for Halstead Security with full SEO infrastructure.
 - **State landing pages** at `/states/[state]` with 9 states pre-configured
 - **City landing pages** at `/cities/[city]` with 9 cities pre-configured
 - **FAQ accordions** on home, plans, dealer, and per-city pages (each emits FAQ schema)
-- **Patched security vulnerability** — Next.js 14.2.30 (was 14.2.16)
+- **Patched security vulnerability** - Next.js 14.2.30 (was 14.2.16)
 
 ## Pages
 
@@ -58,15 +58,15 @@ Next.js 14 marketing site for Halstead Security with full SEO infrastructure.
 
 ## Brand
 
-- **Navy:** `#0F1B2D` — primary
-- **Gold:** `#C9A547` — accent
-- **Cream:** `#F4F1EA` — supporting
-- **Forest:** `#2F5233` — success states
-- **Burgundy:** `#7A1F1F` — error states
+- **Navy:** `#0F1B2D` - primary
+- **Gold:** `#C9A547` - accent
+- **Cream:** `#F4F1EA` - supporting
+- **Forest:** `#2F5233` - success states
+- **Burgundy:** `#7A1F1F` - error states
 
 ## Typography
 
-- **Inter** — entire site, loaded via `next/font/google` for self-hosting and optimal LCP
+- **Inter** - entire site, loaded via `next/font/google` for self-hosting and optimal LCP
 - Display weights: 700, 800
 - Body weights: 400, 500, 600
 

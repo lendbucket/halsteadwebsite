@@ -1,4 +1,4 @@
-# Halstead Marketing Site — Content Index
+# Halstead Marketing Site - Content Index
 
 This is the inventory of marketing content. The Next.js site reads from `content/pages/*.mdx` and renders each as a page.
 
