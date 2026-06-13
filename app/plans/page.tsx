@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Check, X, ArrowRight, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
+import { SecurityDisclaimer } from "@/components/SecurityDisclaimer";
 import { generateProductSchema, generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
@@ -292,6 +293,8 @@ export default function PlansPage() {
           </div>
         </div>
       </section>
+
+      <SecurityDisclaimer />
 
       {/* CTA */}
       <section className="bg-navy py-20 text-cream">

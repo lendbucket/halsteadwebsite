@@ -2,16 +2,12 @@ import Link from "next/link";
 import {
   ShieldCheck,
   MapPin,
-  Phone,
   Sparkles,
   ArrowRight,
-  Camera,
-  Bell,
-  Wifi,
   CheckCircle2,
-  Star,
 } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
+import { SecurityDisclaimer } from "@/components/SecurityDisclaimer";
 import { generateFaqSchema, SITE } from "@/lib/seo";
 import type { Metadata } from "next";
 
@@ -354,6 +350,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <SecurityDisclaimer />
 
       {/* Final CTA */}
       <section className="relative overflow-hidden bg-navy py-20 text-cream">
