@@ -94,10 +94,14 @@ export function Footer() {
           <p className="text-xs text-cream/60">
             &copy; {year} Halstead Security, LLC. All rights reserved.
           </p>
-          <p className="text-xs text-cream/60">
-            Halstead Security and the Halstead Security shield mark are
-            trademarks of Halstead Security, LLC.
-          </p>
+          <div className="flex items-center gap-4 text-xs text-cream/60">
+            <Link href="/privacy" className="hover:text-cream">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-cream">
+              Terms of Service
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
