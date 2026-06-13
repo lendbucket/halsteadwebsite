@@ -16,7 +16,7 @@ import { TerritoryForm } from "./TerritoryForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Own a Security Territory | Halstead Licensing",
+  title: "Own a Security Territory",
   description:
     "License a protected Halstead Security territory. Resell white-label cloud cameras and monitoring under your brand or ours. Recurring revenue. Apply now.",
   alternates: { canonical: "/territories" },
