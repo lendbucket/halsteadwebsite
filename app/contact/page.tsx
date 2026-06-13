@@ -22,6 +22,7 @@ function ContactForm() {
   const [stepOneData, setStepOneData] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleStepOne = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -42,6 +43,7 @@ function ContactForm() {
     };
 
     try {
+      setError(false);
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -51,10 +53,10 @@ function ContactForm() {
       if (res.ok) {
         setSubmitted(true);
       } else {
-        alert("Something went wrong. Please email us directly.");
+        setError(true);
       }
     } catch {
-      alert("Something went wrong. Please email us directly.");
+      setError(true);
     } finally {
       setSubmitting(false);
     }
@@ -261,6 +263,16 @@ function ContactForm() {
               }
             />
           </div>
+
+          {error && (
+            <div className="rounded-lg border border-burgundy/30 bg-burgundy/10 p-4 text-sm text-burgundy">
+              Something went wrong. Please try again or email us at{" "}
+              <a href="mailto:hello@halsteadsecurity.com" className="font-semibold underline">
+                hello@halsteadsecurity.com
+              </a>
+              .
+            </div>
+          )}
 
           <div className="flex gap-3">
             <button

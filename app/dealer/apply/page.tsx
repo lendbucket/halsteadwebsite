@@ -10,6 +10,7 @@ export default function DealerApplyPage() {
   const [step, setStep] = useState<Step>(1);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
   const [data, setData] = useState<Record<string, string>>({});
 
   const handleNext = (e: React.FormEvent<HTMLFormElement>) => {
@@ -34,9 +35,9 @@ export default function DealerApplyPage() {
         body: JSON.stringify(finalData),
       });
       if (res.ok) setSubmitted(true);
-      else alert("Something went wrong. Please email dealers@halsteadsecurity.com directly.");
+      else setError(true);
     } catch {
-      alert("Something went wrong. Please email dealers@halsteadsecurity.com directly.");
+      setError(true);
     } finally {
       setSubmitting(false);
     }
@@ -296,6 +297,16 @@ export default function DealerApplyPage() {
               this stage. It is paid only after acceptance and contract
               signing.
             </div>
+
+            {error && (
+              <div className="rounded-lg border border-burgundy/30 bg-burgundy/10 p-4 text-sm text-burgundy">
+                Something went wrong. Please try again or email{" "}
+                <a href="mailto:dealers@halsteadsecurity.com" className="font-semibold underline">
+                  dealers@halsteadsecurity.com
+                </a>{" "}
+                directly.
+              </div>
+            )}
 
             <div className="flex gap-3">
               <button
