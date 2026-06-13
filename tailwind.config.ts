@@ -48,7 +48,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
-        display: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+        display: ["Fraunces", "Georgia", "serif"],
       },
       fontSize: {
         "display-2xl": ["4.5rem", { lineHeight: "1.05", letterSpacing: "-0.025em", fontWeight: "700" }],
