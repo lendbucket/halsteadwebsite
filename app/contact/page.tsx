@@ -61,20 +61,49 @@ function ContactForm() {
   };
 
   if (submitted) {
+    const successContent = {
+      customer: {
+        eyebrow: "Quote request received",
+        heading: "Your local Halstead team will be in touch.",
+        body: "A real person will review your request and respond within 1 business day with a custom quote for your property.",
+        cta: { href: "/plans", label: "Explore plans while you wait" },
+        secondary: { href: "/features", label: "See what makes Halstead different" },
+      },
+      dealer: {
+        eyebrow: "Dealer inquiry received",
+        heading: "We're reviewing your interest.",
+        body: "A member of our dealer team will follow up within 1 business day. In the meantime, learn more about territory economics and the program structure.",
+        cta: { href: "/dealer", label: "Read about the dealer program" },
+        secondary: { href: "/dealer/faq", label: "Browse the dealer FAQ" },
+      },
+      partner: {
+        eyebrow: "Partnership inquiry received",
+        heading: "Let's explore what's possible.",
+        body: "Our partnerships team will reach out within 1 business day to schedule a discovery call about white-label options.",
+        cta: { href: "/white-label", label: "Review white-label tiers" },
+        secondary: { href: "/about", label: "Learn about Halstead" },
+      },
+    };
+
+    const content = successContent[formType];
+
     return (
       <div className="text-center">
         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gold/20">
           <Check className="h-8 w-8 text-gold" strokeWidth={3} />
         </div>
-        <p className="eyebrow mt-6">Thank you</p>
-        <h1 className="heading-hero mt-4 text-balance">We got your message.</h1>
-        <p className="body-large mt-6">
-          A real person on the Halstead team will respond within 1 business
-          day.
-        </p>
-        <Link href="/" className="mt-10 btn-primary inline-flex">
-          Back to Home
-        </Link>
+        <p className="eyebrow mt-6">{content.eyebrow}</p>
+        <h1 className="heading-hero mt-4 text-balance">{content.heading}</h1>
+        <p className="body-large mt-6">{content.body}</p>
+        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <Link href={content.cta.href} className="btn-gold group">
+            {content.cta.label}
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Link>
+          <Link href={content.secondary.href} className="btn-secondary">
+            {content.secondary.label}
+          </Link>
+        </div>
       </div>
     );
   }

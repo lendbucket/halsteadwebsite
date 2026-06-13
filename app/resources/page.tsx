@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import type { Metadata } from "next";
 import { RESOURCES_LIST } from "@/lib/resources";
+import { RelatedContent } from "@/components/RelatedContent";
 
 export const metadata: Metadata = {
   title: "Home Security Buying Guides",
@@ -62,23 +63,29 @@ export default function ResourcesHubPage() {
         </div>
       </section>
 
-      <section className="bg-navy py-16 text-cream">
-        <div className="container-narrow text-center">
-          <h2 className="text-3xl font-bold text-cream md:text-4xl text-balance">
-            Have a question we haven&apos;t answered?
-          </h2>
-          <p className="mt-6 text-lg text-cream/80">
-            Email{" "}
-            <a
-              href="mailto:hello@halsteadsecurity.com"
-              className="font-semibold text-gold underline"
-            >
-              hello@halsteadsecurity.com
-            </a>{" "}
-            and a real person responds within 1 business day.
-          </p>
-        </div>
-      </section>
+      <RelatedContent
+        heading="Ready to take the next step?"
+        items={[
+          {
+            href: "/plans",
+            eyebrow: "Pricing",
+            title: "See plans from $30/mo",
+            description: "Compare Basic, Premium, and Pro Monitoring side by side.",
+          },
+          {
+            href: "/compare",
+            eyebrow: "Comparisons",
+            title: "How Halstead stacks up",
+            description: "Side-by-side vs ADT, Ring, SimpliSafe, and Vivint.",
+          },
+          {
+            href: "/contact",
+            eyebrow: "Get started",
+            title: "Get a free quote",
+            description: "Tell us about your home and get a custom recommendation.",
+          },
+        ]}
+      />
     </>
   );
 }

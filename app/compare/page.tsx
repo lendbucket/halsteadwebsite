@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 import { COMPARISONS_LIST } from "@/lib/comparisons";
+import { RelatedContent } from "@/components/RelatedContent";
 
 export const metadata: Metadata = {
   title: "Compare Home Security Companies",
@@ -53,21 +54,29 @@ export default function CompareHubPage() {
         </div>
       </section>
 
-      <section className="bg-navy py-16 text-cream">
-        <div className="container-narrow text-center">
-          <h2 className="text-3xl font-bold text-cream md:text-4xl text-balance">
-            Considering another brand?
-          </h2>
-          <p className="mt-6 text-lg text-cream/80">
-            Tell us which one and we&apos;ll do an honest side-by-side
-            comparison for your specific situation.
-          </p>
-          <Link href="/contact" className="mt-10 btn-gold inline-flex group">
-            Talk to our team
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Link>
-        </div>
-      </section>
+      <RelatedContent
+        heading="Dive deeper."
+        items={[
+          {
+            href: "/plans",
+            eyebrow: "Pricing",
+            title: "See what Halstead actually costs",
+            description: "Three plans, transparent pricing, no hidden fees.",
+          },
+          {
+            href: "/features",
+            eyebrow: "Features",
+            title: "What makes Halstead different",
+            description: "AI filters, vacation mode, two-camera verification, and more.",
+          },
+          {
+            href: "/contact",
+            eyebrow: "Get started",
+            title: "Get your free quote in 15 minutes",
+            description: "Tell us about your home. A real person responds in 1 business day.",
+          },
+        ]}
+      />
     </>
   );
 }

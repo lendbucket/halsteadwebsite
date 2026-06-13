@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Check, ArrowLeft } from "lucide-react";
+import { ArrowRight, Check, ArrowLeft, Mail } from "lucide-react";
 
 type Step = 1 | 2 | 3;
 
@@ -59,9 +59,20 @@ export default function DealerApplyPage() {
             Watch for an email from{" "}
             <span className="font-semibold">dealers@halsteadsecurity.com</span>.
           </p>
-          <Link href="/" className="mt-10 btn-primary inline-flex">
-            Back to Home
-          </Link>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link href="/dealer/faq" className="btn-gold group inline-flex">
+              Read the full dealer FAQ
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+            <Link href="/dealer" className="btn-secondary inline-flex">
+              Review program details
+            </Link>
+          </div>
+          <p className="mt-8 flex items-center justify-center gap-2 text-sm text-navy/60">
+            <Mail className="h-4 w-4" />
+            Watch for an email from{" "}
+            <span className="font-semibold text-navy">dealers@halsteadsecurity.com</span>
+          </p>
         </div>
       </section>
     );

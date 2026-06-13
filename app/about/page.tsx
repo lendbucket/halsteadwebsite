@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import { RelatedContent } from "@/components/RelatedContent";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -127,39 +128,29 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-navy py-16 text-cream">
-        <div className="container-narrow text-center">
-          <h2 className="text-3xl font-bold text-cream md:text-4xl">
-            Get in touch.
-          </h2>
-          <div className="mt-8 grid gap-6 text-base text-cream/80 md:grid-cols-2">
-            <div>
-              <p className="font-semibold text-gold">Customer questions</p>
-              <a href="mailto:hello@halsteadsecurity.com" className="hover:text-cream">
-                hello@halsteadsecurity.com
-              </a>
-            </div>
-            <div>
-              <p className="font-semibold text-gold">Become a dealer</p>
-              <a href="mailto:dealers@halsteadsecurity.com" className="hover:text-cream">
-                dealers@halsteadsecurity.com
-              </a>
-            </div>
-            <div>
-              <p className="font-semibold text-gold">White-label partnerships</p>
-              <a href="mailto:partner@halsteadsecurity.com" className="hover:text-cream">
-                partner@halsteadsecurity.com
-              </a>
-            </div>
-            <div>
-              <p className="font-semibold text-gold">Press</p>
-              <a href="mailto:press@halsteadsecurity.com" className="hover:text-cream">
-                press@halsteadsecurity.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <RelatedContent
+        heading="See what we build."
+        items={[
+          {
+            href: "/plans",
+            eyebrow: "Plans",
+            title: "Plans from $30/mo",
+            description: "Three plans, honest pricing, no setup fees. See which one fits your home.",
+          },
+          {
+            href: "/features",
+            eyebrow: "Features",
+            title: "Smart security features",
+            description: "AI motion filters, vacation mode, family check-ins, and more.",
+          },
+          {
+            href: "/dealer",
+            eyebrow: "For operators",
+            title: "Own a territory",
+            description: "Run your own Halstead Security business. Founding territories from $15K.",
+          },
+        ]}
+      />
     </>
   );
 }
