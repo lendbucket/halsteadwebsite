@@ -3,9 +3,10 @@
 import { useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, ArrowLeft } from "lucide-react";
 
 type FormType = "customer" | "dealer" | "partner";
+type Step = 1 | 2;
 
 function ContactForm() {
   const searchParams = useSearchParams();
@@ -17,27 +18,38 @@ function ContactForm() {
       : "customer";
 
   const [formType, setFormType] = useState<FormType>(initialType);
+  const [step, setStep] = useState<Step>(1);
+  const [stepOneData, setStepOneData] = useState<Record<string, string>>({});
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const handleStepOne = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    setStepOneData(Object.fromEntries(formData.entries()) as Record<string, string>);
+    setStep(2);
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSubmitting(true);
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-    const payload = Object.fromEntries(formData.entries());
+    const formData = new FormData(e.currentTarget);
+    const payload = {
+      ...stepOneData,
+      ...Object.fromEntries(formData.entries()),
+      type: formType,
+    };
 
     try {
       const res = await fetch("/api/lead", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...payload, type: formType }),
+        body: JSON.stringify(payload),
       });
 
       if (res.ok) {
         setSubmitted(true);
-        form.reset();
       } else {
         alert("Something went wrong. Please email us directly.");
       }
@@ -76,6 +88,7 @@ function ContactForm() {
         business day.
       </p>
 
+      {/* Audience selector */}
       <div className="mt-10 flex flex-wrap gap-2 rounded-lg bg-cream-200 p-2">
         {(
           [
@@ -87,7 +100,11 @@ function ContactForm() {
           <button
             key={option.id}
             type="button"
-            onClick={() => setFormType(option.id)}
+            onClick={() => {
+              setFormType(option.id);
+              setStep(1);
+              setStepOneData({});
+            }}
             className={`flex-1 rounded-md px-4 py-3 text-sm font-semibold transition-colors ${
               formType === option.id
                 ? "bg-navy text-cream shadow-md"
@@ -99,72 +116,151 @@ function ContactForm() {
         ))}
       </div>
 
-      <form onSubmit={handleSubmit} className="mt-8 space-y-6">
-        <div className="grid gap-6 md:grid-cols-2">
-          <Field label="Full name" name="name" required />
-          <Field label="Email" name="email" type="email" required />
-          <Field label="Phone" name="phone" type="tel" required />
-          <Field
-            label={formType === "customer" ? "City / State" : "Operating state"}
-            name="location"
-            required
-          />
+      {/* Progress indicator */}
+      <div className="mt-8 flex items-center gap-2">
+        <div className="flex items-center gap-2">
+          <div
+            className={`flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold ${
+              step >= 1 ? "bg-gold text-navy" : "bg-navy/10 text-navy/40"
+            }`}
+          >
+            {step > 1 ? <Check className="h-3.5 w-3.5" strokeWidth={3} /> : "1"}
+          </div>
+          <span className="text-xs font-medium text-navy/60">Your info</span>
         </div>
-
-        {formType === "customer" && (
-          <Field
-            label="Property type"
-            name="property"
-            placeholder="Single family home, condo, business, etc."
-          />
-        )}
-
-        {formType === "dealer" && (
-          <Field
-            label="Background"
-            name="background"
-            placeholder="Brief description of your existing business or alarm experience"
-          />
-        )}
-
-        {formType === "partner" && (
-          <Field
-            label="Company"
-            name="company"
-            placeholder="Your existing company name and current customer count"
-            required
-          />
-        )}
-
-        <div>
-          <label className="label-base">Tell us more</label>
-          <textarea
-            name="message"
-            rows={5}
-            className="input-base"
-            placeholder={
-              formType === "customer"
-                ? "What kind of system are you thinking about? Any specific concerns?"
-                : formType === "dealer"
-                ? "Why are you interested in Halstead? What's your timeline?"
-                : "What scale of partnership are you looking for? Any specific requirements?"
-            }
-          />
+        <div className={`h-0.5 flex-1 rounded ${step > 1 ? "bg-gold" : "bg-navy/10"}`} />
+        <div className="flex items-center gap-2">
+          <div
+            className={`flex h-7 w-7 items-center justify-center rounded-full text-xs font-bold ${
+              step >= 2 ? "bg-gold text-navy" : "bg-navy/10 text-navy/40"
+            }`}
+          >
+            2
+          </div>
+          <span className="text-xs font-medium text-navy/60">Details</span>
         </div>
+      </div>
 
-        <button type="submit" disabled={submitting} className="btn-gold group">
-          {submitting ? "Sending..." : "Send Message"}
-          {!submitting && (
+      {/* Step 1: Email + core info */}
+      {step === 1 && (
+        <form onSubmit={handleStepOne} className="mt-8 space-y-6">
+          <div className="grid gap-6 md:grid-cols-2">
+            <Field
+              label="Email"
+              name="email"
+              type="email"
+              required
+              defaultValue={stepOneData.email}
+            />
+            <Field
+              label="Full name"
+              name="name"
+              required
+              defaultValue={stepOneData.name}
+            />
+          </div>
+          <button type="submit" className="btn-gold group">
+            Continue
             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          )}
-        </button>
+          </button>
+        </form>
+      )}
 
-        <p className="text-xs text-navy/60">
-          By submitting this form you agree to be contacted by Halstead
-          Security or one of our local dealers about your inquiry. We
-          don&apos;t sell your information.
-        </p>
-      </form>
+      {/* Step 2: Remaining details (varies by type) */}
+      {step === 2 && (
+        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+          <div className="rounded-lg border border-navy/10 bg-cream-200 px-4 py-3 text-sm text-navy/70">
+            Submitting as{" "}
+            <span className="font-semibold text-navy">
+              {stepOneData.email}
+            </span>
+            <button
+              type="button"
+              onClick={() => setStep(1)}
+              className="ml-2 text-xs font-semibold text-gold hover:underline"
+            >
+              change
+            </button>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <Field label="Phone" name="phone" type="tel" required />
+            <Field
+              label={formType === "customer" ? "City / State" : "Operating state"}
+              name="location"
+              required
+            />
+          </div>
+
+          {formType === "customer" && (
+            <Field
+              label="Property type"
+              name="property"
+              placeholder="Single family home, condo, business, etc."
+            />
+          )}
+
+          {formType === "dealer" && (
+            <Field
+              label="Background"
+              name="background"
+              placeholder="Brief description of your existing business or alarm experience"
+            />
+          )}
+
+          {formType === "partner" && (
+            <Field
+              label="Company"
+              name="company"
+              placeholder="Your existing company name and current customer count"
+              required
+            />
+          )}
+
+          <div>
+            <label className="label-base">Tell us more</label>
+            <textarea
+              name="message"
+              rows={5}
+              className="input-base"
+              placeholder={
+                formType === "customer"
+                  ? "What kind of system are you thinking about? Any specific concerns?"
+                  : formType === "dealer"
+                  ? "Why are you interested in Halstead? What's your timeline?"
+                  : "What scale of partnership are you looking for? Any specific requirements?"
+              }
+            />
+          </div>
+
+          <div className="flex gap-3">
+            <button
+              type="button"
+              onClick={() => setStep(1)}
+              className="btn-secondary"
+            >
+              <ArrowLeft className="mr-2 h-4 w-4" />
+              Back
+            </button>
+            <button type="submit" disabled={submitting} className="btn-gold group">
+              {submitting ? "Sending..." : "Send Message"}
+              {!submitting && (
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              )}
+            </button>
+          </div>
+
+          <p className="text-xs text-navy/60">
+            By submitting this form you agree to be contacted by Halstead
+            Security or one of our local dealers about your inquiry. We
+            don&apos;t sell your information. See our{" "}
+            <Link href="/privacy" className="underline">
+              Privacy Policy
+            </Link>
+            .
+          </p>
+        </form>
+      )}
 
       <div className="mt-16 border-t border-navy/10 pt-8">
         <h2 className="text-xl font-bold text-navy">Or email us directly</h2>
@@ -229,12 +325,14 @@ function Field({
   type = "text",
   required = false,
   placeholder,
+  defaultValue,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   placeholder?: string;
+  defaultValue?: string;
 }) {
   return (
     <div>
@@ -247,6 +345,7 @@ function Field({
         name={name}
         required={required}
         placeholder={placeholder}
+        defaultValue={defaultValue}
         className="input-base"
       />
     </div>
