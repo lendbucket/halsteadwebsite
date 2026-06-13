@@ -32,7 +32,7 @@ export const ORGANIZATION_SCHEMA = {
   "@type": "Organization",
   name: SITE.name,
   url: SITE.url,
-  logo: `${SITE.url}/logo.png`,
+  logo: `${SITE.url}/icon.svg`,
   description: SITE.description,
   founder: {
     "@type": "Person",
@@ -57,7 +57,7 @@ export const LOCAL_BUSINESS_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "SecuritySystemInstallationService",
   name: SITE.name,
-  image: `${SITE.url}/og.png`,
+  image: `${SITE.url}/opengraph-image`,
   "@id": SITE.url,
   url: SITE.url,
   email: SITE.email,

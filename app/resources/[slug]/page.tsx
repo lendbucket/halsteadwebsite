@@ -46,7 +46,7 @@ export default async function ResourcePage({
     "@type": "Article",
     headline: data.title,
     description: data.metaDescription,
-    image: `${SITE.url}/og.png`,
+    image: `${SITE.url}/resources/${slug}/opengraph-image`,
     datePublished: data.publishedDate,
     dateModified: data.updatedDate,
     author: {

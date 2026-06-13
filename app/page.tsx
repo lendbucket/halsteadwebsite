@@ -5,6 +5,7 @@ import {
   Sparkles,
   ArrowRight,
   CheckCircle2,
+  HeadphonesIcon,
 } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { SecurityDisclaimer } from "@/components/SecurityDisclaimer";
@@ -142,7 +143,7 @@ export default function HomePage() {
               featured
             />
             <PillarCard
-              icon={<Phone className="h-7 w-7 text-gold" strokeWidth={2} />}
+              icon={<HeadphonesIcon className="h-7 w-7 text-gold" strokeWidth={2} />}
               title="Real people answer"
               description="When you call Halstead, a real person picks up. Your local Halstead team handles installation, support, and service. No offshore call center."
             />

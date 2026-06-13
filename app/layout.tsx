@@ -47,20 +47,11 @@ export const metadata: Metadata = {
     siteName: SITE.name,
     title: "Professional Home Security, Locally Installed",
     description: SITE.description,
-    images: [
-      {
-        url: "/og.png",
-        width: 1200,
-        height: 630,
-        alt: "Halstead Security: professional home security, installed in your neighborhood",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Halstead Security",
     description: SITE.description,
-    images: ["/og.png"],
     creator: SITE.twitter,
   },
   robots: {
