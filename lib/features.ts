@@ -38,7 +38,7 @@ export const FEATURES: Record<string, Feature> = {
     category: "smart-filtering",
     metaTitle: "Two-Camera Verification: How Halstead Cuts False Alarms 70%",
     metaDescription:
-      "Halstead's two-camera verification requires corroboration from a second camera or sensor before triggering an alarm. Cuts false alarms by an estimated 70%. Learn how it works.",
+      "Two-camera verification requires a second sensor to corroborate before triggering an alarm. Cuts false alarms by an estimated 70%. Learn how it works.",
     hero: {
       eyebrow: "Smart Filtering",
       title: "Two-Camera Verification",
@@ -105,9 +105,9 @@ export const FEATURES: Record<string, Feature> = {
     slug: "ai-motion-classification",
     name: "AI Motion Classification",
     category: "smart-filtering",
-    metaTitle: "AI Motion Detection: Person, Vehicle, Package, Animal Recognition",
+    metaTitle: "AI Motion Detection: Person, Vehicle, Package Classification",
     metaDescription:
-      "Halstead's AI motion classification distinguishes person, vehicle, package, and animal motion. Subscribe only to the categories that matter to you. Cuts notification noise dramatically.",
+      "Halstead AI classifies motion as person, vehicle, package, or animal. Subscribe to what matters and cut notification noise. See how it works.",
     hero: {
       eyebrow: "Smart Filtering",
       title: "AI Motion Classification",
@@ -176,7 +176,7 @@ export const FEATURES: Record<string, Feature> = {
     category: "automation",
     metaTitle: "Vacation Mode: Automated Home Security While You're Away",
     metaDescription:
-      "Halstead's vacation mode increases sensitivity, sets longer cloud retention, sends daily digests, and alerts your trusted neighbors, all from one toggle. Built for the way families actually travel.",
+      "Vacation mode increases sensitivity, extends cloud retention, sends daily digests, and alerts neighbors from one toggle. Built for how families travel.",
     hero: {
       eyebrow: "Automation",
       title: "Vacation Mode",
@@ -253,7 +253,7 @@ export const FEATURES: Record<string, Feature> = {
     category: "automation",
     metaTitle: "Visitor Pass: Time-Boxed Access for Cleaners and Contractors",
     metaDescription:
-      "Halstead's visitor pass system creates time-boxed access windows for cleaners, contractors, dog walkers, and visitors. Records activity but doesn't blast you with alerts during their pre-defined window.",
+      "Create time-boxed access windows for cleaners, contractors, and visitors. Records activity without alert noise during scheduled visits.",
     hero: {
       eyebrow: "Automation",
       title: "Visitor Pass",
@@ -316,9 +316,9 @@ export const FEATURES: Record<string, Feature> = {
     slug: "family-check-ins",
     name: "Family Check-Ins",
     category: "automation",
-    metaTitle: "Family Check-Ins: Smart Notifications When Family Arrives Home",
+    metaTitle: "Family Check-Ins: Know When Family Arrives Home",
     metaDescription:
-      "Halstead's family check-ins recognize household members and send 'Sarah is home' notifications without triggering alarms. Built for households with kids, teens, or shift workers.",
+      "Get arrival notifications for household members without triggering alarms. Built for families with kids, teens, or shift workers.",
     hero: {
       eyebrow: "Automation",
       title: "Family Check-Ins",
@@ -383,7 +383,7 @@ export const FEATURES: Record<string, Feature> = {
     category: "automation",
     metaTitle: "Storm Mode: Automatic Weather-Based Alert Suppression",
     metaDescription:
-      "Halstead's storm mode automatically reduces motion sensitivity during severe weather alerts from the National Weather Service. No more 50 false alerts during a thunderstorm or hurricane.",
+      "Storm mode auto-reduces motion sensitivity during NWS severe weather alerts. No more 50 false alerts during a thunderstorm or hurricane.",
     hero: {
       eyebrow: "Automation",
       title: "Storm Mode",
@@ -454,7 +454,7 @@ export const FEATURES: Record<string, Feature> = {
     category: "response",
     metaTitle: "Smart Escalation: Automatic Alert Chain to Police Dispatch",
     metaDescription:
-      "Halstead's smart escalation chain: push notification → automated phone call → emergency contact → professional dispatch. Each step happens only if the prior step doesn't get a response.",
+      "Smart escalation chain: push notification, phone call, emergency contact, then dispatch. Each step fires only if the prior step gets no response.",
     hero: {
       eyebrow: "Response",
       title: "Smart Escalation",
@@ -523,9 +523,9 @@ export const FEATURES: Record<string, Feature> = {
     slug: "cellular-backup",
     name: "Cellular Backup",
     category: "response",
-    metaTitle: "Cellular Backup Hub: Stay Online During Internet & Power Outages",
+    metaTitle: "Cellular Backup: Stay Online During Outages",
     metaDescription:
-      "Halstead's cellular backup hub keeps your security online during internet and power outages. LTE-M radio, 24-hour battery backup, included with Pro Monitoring tier.",
+      "Cellular backup hub keeps your security online during internet and power outages. LTE-M radio, 24-hour battery, included with Pro Monitoring.",
     hero: {
       eyebrow: "Response",
       title: "Cellular Backup",
@@ -594,9 +594,9 @@ export const FEATURES: Record<string, Feature> = {
     slug: "insurance-discount",
     name: "Insurance Discount Auto-Submission",
     category: "financial",
-    metaTitle: "Insurance Discount Auto-Submission: Save 5-15% on Home Insurance",
+    metaTitle: "Insurance Discount: Save 5-15% on Home Insurance",
     metaDescription:
-      "Halstead automatically generates and submits your monitoring certificate to your home insurance carrier annually. Most carriers offer 5-15% discounts on monitored homes.",
+      "Halstead auto-generates and submits your monitoring certificate to your insurer annually. Most carriers offer 5-15% discounts on monitored homes.",
     hero: {
       eyebrow: "Financial",
       title: "Insurance Discount Auto-Submission",
@@ -661,7 +661,7 @@ export const FEATURES: Record<string, Feature> = {
     category: "automation",
     metaTitle: "Halstead Watch: Opt-In Neighbor Network Without the Toxicity",
     metaDescription:
-      "Halstead Watch is an opt-in community alert network for Halstead customers in the same neighborhood. Share blurred motion events without the toxicity of Citizen or Nextdoor.",
+      "Opt-in community alert network for Halstead customers in your neighborhood. Share blurred motion events without Citizen or Nextdoor toxicity.",
     hero: {
       eyebrow: "Automation",
       title: "Halstead Watch",

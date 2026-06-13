@@ -44,9 +44,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Home Security",
     shortName: "Residential",
     industry: "Residential homes",
-    metaTitle: "Home Security Systems: Professional Installation from $30/month",
+    metaTitle: "Home Security: Professional Install from $30/mo",
     metaDescription:
-      "Halstead home security delivers professionally installed cameras, smart AI motion alerts, and optional 24/7 monitoring for single-family homes. No 36-month contracts. Free quote in minutes.",
+      "Professionally installed cameras, smart AI alerts, and optional 24/7 monitoring for homes. No 36-month contracts. Free quote in minutes.",
     hero: {
       eyebrow: "For Homeowners",
       title: "Home security that actually works for the way families live.",
@@ -131,9 +131,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Business Security",
     shortName: "Commercial",
     industry: "Small and mid-sized businesses",
-    metaTitle: "Small Business Security Systems: Restaurants, Retail, Offices",
+    metaTitle: "Business Security: Restaurants, Retail, Offices",
     metaDescription:
-      "Professional commercial security from Halstead. Camera systems, access control, alarm monitoring, and after-hours dispatch for restaurants, retail stores, offices, and small businesses. Locally installed, no long contracts.",
+      "Commercial security cameras, access control, and after-hours dispatch for restaurants, retail, and offices. Locally installed, no long contracts.",
     hero: {
       eyebrow: "For Small Business",
       title: "Commercial security without the corporate runaround.",
@@ -210,9 +210,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Multifamily & Apartments",
     shortName: "Multifamily",
     industry: "Apartment buildings, condo associations",
-    metaTitle: "Apartment Security Systems: Multifamily Camera & Access Control",
+    metaTitle: "Multifamily Security: Apartment Camera Systems",
     metaDescription:
-      "Halstead multifamily security: per-unit camera options, common area monitoring, package room cameras, parking lot coverage, and resident-facing app. Built for property managers and HOAs.",
+      "Per-unit cameras, common area monitoring, package room coverage, parking lot cameras, and resident app. Built for property managers and HOAs.",
     hero: {
       eyebrow: "For Property Managers",
       title: "Security infrastructure for the modern apartment building.",
@@ -289,9 +289,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Short-Term Rentals",
     shortName: "STR / Airbnb",
     industry: "Airbnb and VRBO hosts",
-    metaTitle: "Airbnb Security Cameras: Short-Term Rental Property Protection",
+    metaTitle: "Short-Term Rental Security: Airbnb Camera Systems",
     metaDescription:
-      "Halstead protects Airbnb and VRBO short-term rental properties with platform-compliant cameras, noise monitoring, occupancy detection, and damage documentation. Built for hosts and property managers.",
+      "Platform-compliant cameras, noise monitoring, occupancy detection, and damage documentation for Airbnb and VRBO. Built for hosts.",
     hero: {
       eyebrow: "For STR Hosts",
       title: "Protect your short-term rental property.",
@@ -368,9 +368,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Construction Site Security",
     shortName: "Construction",
     industry: "Active construction projects",
-    metaTitle: "Construction Site Security Cameras: Job Site Theft Prevention",
+    metaTitle: "Construction Site Security: Job Site Cameras",
     metaDescription:
-      "Halstead construction site security: solar-powered cameras, cellular connectivity, theft detection, and remote monitoring for active job sites. Mobile, weatherproof, and easy to relocate as projects progress.",
+      "Solar-powered cameras, cellular connectivity, theft detection, and remote monitoring for job sites. Weatherproof and easy to relocate.",
     hero: {
       eyebrow: "For Builders",
       title: "Job site theft prevention without dragging cable.",
@@ -447,9 +447,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Cannabis Dispensary Security",
     shortName: "Cannabis",
     industry: "Licensed cannabis retailers",
-    metaTitle: "Cannabis Dispensary Security: State-Compliant Camera Systems",
+    metaTitle: "Cannabis Dispensary Security: State-Compliant Cameras",
     metaDescription:
-      "Halstead cannabis dispensary security: state regulation-compliant camera coverage, vault monitoring, transport tracking, and 90-day video retention. Built for licensed retailers in TX, NM, AZ, CO.",
+      "State-compliant camera coverage, vault monitoring, transport tracking, and 90-day retention for licensed dispensaries in TX, NM, AZ, CO.",
     hero: {
       eyebrow: "For Licensed Cannabis Retailers",
       title: "State-compliant security for cannabis operations.",
@@ -526,9 +526,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Auto Dealership Security",
     shortName: "Auto Dealers",
     industry: "Car dealerships and auto lots",
-    metaTitle: "Auto Dealership Security: License Plate Readers, Lot Monitoring",
+    metaTitle: "Auto Dealership Security: Lot Cameras and LPR",
     metaDescription:
-      "Halstead protects auto dealerships with full lot camera coverage, license plate readers, after-hours monitoring, and integration with dealership inventory systems. Built for car dealers and BHPH lots.",
+      "Full lot camera coverage, license plate readers, after-hours monitoring, and inventory integration. Built for car dealers and BHPH lots.",
     hero: {
       eyebrow: "For Auto Dealers",
       title: "Lot security that pays for itself.",
@@ -605,9 +605,9 @@ export const SOLUTIONS: Record<string, Solution> = {
     name: "Houses of Worship Security",
     shortName: "Worship",
     industry: "Churches, mosques, synagogues, temples",
-    metaTitle: "Church Security Systems: Houses of Worship Camera & Monitoring",
+    metaTitle: "Church Security: Houses of Worship Camera Systems",
     metaDescription:
-      "Halstead protects churches, mosques, synagogues, and temples with welcoming-but-secure camera systems, parking lot coverage, and optional 24/7 monitoring. Mission-focused security for places of worship.",
+      "Welcoming-but-secure cameras, parking lot coverage, and optional 24/7 monitoring for churches, mosques, synagogues, and temples.",
     hero: {
       eyebrow: "For Houses of Worship",
       title: "Security that doesn't compromise welcome.",

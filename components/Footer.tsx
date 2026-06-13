@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ShieldCheck, Mail, Phone, MapPin } from "lucide-react";
+import { ShieldCheck, Mail, MapPin } from "lucide-react";
 import { SITE } from "@/lib/seo";
 
 export function Footer() {
@@ -27,13 +27,6 @@ export function Footer() {
               >
                 <Mail className="h-4 w-4" />
                 {SITE.email}
-              </a>
-              <a
-                href={`tel:${SITE.phone}`}
-                className="flex items-center gap-2 hover:text-cream"
-              >
-                <Phone className="h-4 w-4" />
-                {SITE.phone.replace("+1-", "(").replace(/(\d{3})-(\d{3})-(\d{4})/, "$1) $2-$3")}
               </a>
               <p className="flex items-center gap-2">
                 <MapPin className="h-4 w-4" />

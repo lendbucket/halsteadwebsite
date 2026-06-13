@@ -6,9 +6,9 @@ import { JsonLd } from "@/components/JsonLd";
 import { generateBreadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Industries: Halstead Security by Vertical",
+  title: "Industries We Serve",
   description:
-    "Halstead Security serves residential homes, commercial businesses, multifamily properties, short-term rentals, construction sites, cannabis dispensaries, auto dealerships, and houses of worship across Texas and expanding markets.",
+    "Halstead serves homes, businesses, multifamily, rentals, construction, dispensaries, dealerships, and houses of worship across Texas and beyond.",
   alternates: { canonical: "/industries" },
 };
 

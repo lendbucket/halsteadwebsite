@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Halstead Security",
+  title: "About Us",
   description:
-    "Halstead Security is a national home security brand operated through a network of independent local dealers. Heritage trade brand for the modern home, founded by Robert Reyna in Corpus Christi, Texas.",
+    "Halstead Security is a national home security brand built on independent local dealers. Founded by Robert Reyna in Corpus Christi, Texas.",
   alternates: { canonical: "/about" },
 };
 

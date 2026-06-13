@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { RESOURCES_LIST } from "@/lib/resources";
 
 export const metadata: Metadata = {
-  title: "Home Security Resources & Buying Guides",
+  title: "Home Security Buying Guides",
   description:
-    "Complete buying guides for home security: pricing, DIY vs professional installation, how to choose a system, and industry statistics. Cornerstone resources for security buyers.",
+    "Home security buying guides: pricing, DIY vs professional installation, how to choose a system, and 2026 industry statistics.",
   alternates: { canonical: "/resources" },
 };
 

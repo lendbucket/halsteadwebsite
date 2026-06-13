@@ -29,9 +29,9 @@ export const RESOURCES: Record<string, Resource> = {
   "how-much-does-home-security-cost": {
     slug: "how-much-does-home-security-cost",
     title: "How Much Does a Home Security System Cost in 2026?",
-    metaTitle: "How Much Does a Home Security System Cost in 2026? Complete Guide",
+    metaTitle: "Home Security System Cost in 2026: Complete Guide",
     metaDescription:
-      "Complete 2026 guide to home security costs: monthly monitoring, equipment, professional installation, contract options, and hidden fees. With real pricing from major brands.",
+      "2026 home security cost guide: monthly monitoring, equipment, professional installation, contracts, and hidden fees. Real pricing compared.",
     category: "cost",
     publishedDate: "2026-05-06",
     updatedDate: "2026-05-06",
@@ -173,9 +173,9 @@ export const RESOURCES: Record<string, Resource> = {
   "diy-vs-professional-installation": {
     slug: "diy-vs-professional-installation",
     title: "DIY vs Professional Home Security Installation",
-    metaTitle: "DIY vs Professional Home Security Installation: Which Is Right for You?",
+    metaTitle: "DIY vs Professional Security Installation: 2026 Guide",
     metaDescription:
-      "DIY vs professional home security installation: time, cost, hardware quality, support, and long-term reliability compared. With recommendations based on your situation.",
+      "DIY vs professional home security: time, cost, hardware quality, support, and reliability compared. Recommendations based on your situation.",
     category: "diy-vs-pro",
     publishedDate: "2026-05-06",
     updatedDate: "2026-05-06",
@@ -291,9 +291,9 @@ export const RESOURCES: Record<string, Resource> = {
   "how-to-choose-security-system": {
     slug: "how-to-choose-security-system",
     title: "How to Choose a Home Security System",
-    metaTitle: "How to Choose a Home Security System: Complete 2026 Buying Guide",
+    metaTitle: "How to Choose a Home Security System in 2026",
     metaDescription:
-      "Complete buying guide for home security systems in 2026. Compare professional vs DIY, monitoring options, contract terms, smart features, and pricing. Decision framework included.",
+      "2026 buying guide: compare professional vs DIY, monitoring options, contract terms, smart features, and pricing. Decision framework included.",
     category: "buying-guide",
     publishedDate: "2026-05-06",
     updatedDate: "2026-05-06",
@@ -411,9 +411,9 @@ export const RESOURCES: Record<string, Resource> = {
   "home-security-statistics": {
     slug: "home-security-statistics",
     title: "Home Security Statistics: 2026 Edition",
-    metaTitle: "Home Security Statistics 2026: Burglary, Crime, & Industry Data",
+    metaTitle: "Home Security Statistics 2026: Crime and Industry Data",
     metaDescription:
-      "Latest 2026 home security statistics: burglary rates, deterrence effectiveness, false alarm data, monitoring response times, and industry pricing trends. Sourced and dated.",
+      "2026 home security stats: burglary rates, deterrence data, false alarm rates, monitoring response times, and pricing trends. Sourced and dated.",
     category: "statistics",
     publishedDate: "2026-05-06",
     updatedDate: "2026-05-06",

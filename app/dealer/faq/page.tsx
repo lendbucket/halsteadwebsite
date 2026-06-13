@@ -5,9 +5,9 @@ import { generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Dealer FAQ: Halstead Security Territory Program",
+  title: "Dealer Program FAQ",
   description:
-    "Detailed answers about becoming a Halstead Security dealer: territory program, $15,000 founding fee, state licensing, training, dealer economics, and program structure.",
+    "Answers about the Halstead dealer program: territory rights, $15,000 founding fee, state licensing, training, economics, and structure.",
   alternates: { canonical: "/dealer/faq" },
 };
 

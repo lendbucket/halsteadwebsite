@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import { COMPARISONS_LIST } from "@/lib/comparisons";
 
 export const metadata: Metadata = {
-  title: "Compare Halstead vs Other Home Security Companies",
+  title: "Compare Home Security Companies",
   description:
-    "Detailed comparisons of Halstead Security against ADT, Ring, SimpliSafe, and Vivint. See pricing, features, contract terms, and capabilities side-by-side.",
+    "Halstead vs ADT, Ring, SimpliSafe, and Vivint. Pricing, features, contract terms, and capabilities compared side by side.",
   alternates: { canonical: "/compare" },
 };
 

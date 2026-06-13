@@ -34,7 +34,7 @@ export const COMPARISONS: Record<string, Comparison> = {
     competitor: "ADT",
     metaTitle: "Halstead vs ADT: Home Security Comparison 2026",
     metaDescription:
-      "Halstead vs ADT: contract length, pricing, features, professional install, and customer support compared. See which security company actually fits how families live in 2026.",
+      "Halstead vs ADT compared: contract length, pricing, features, professional install, and support. See which fits how families live in 2026.",
     hero: {
       eyebrow: "Halstead vs ADT",
       title: "Halstead vs ADT",
@@ -172,7 +172,7 @@ export const COMPARISONS: Record<string, Comparison> = {
     competitor: "Ring",
     metaTitle: "Halstead vs Ring: Professional Install vs DIY Compared 2026",
     metaDescription:
-      "Halstead vs Ring: professional installation vs DIY, smart features, monitoring options, and total cost compared. Which home security approach actually fits your needs?",
+      "Halstead vs Ring: pro install vs DIY, smart features, monitoring options, and total cost compared. Which approach fits your needs?",
     hero: {
       eyebrow: "Halstead vs Ring",
       title: "Halstead vs Ring",
@@ -298,7 +298,7 @@ export const COMPARISONS: Record<string, Comparison> = {
     competitor: "SimpliSafe",
     metaTitle: "Halstead vs SimpliSafe: Pro Install vs DIY Security 2026",
     metaDescription:
-      "Halstead vs SimpliSafe: professional installation vs DIY, monitoring quality, pricing, and feature set compared. Which security system fits your needs better in 2026?",
+      "Halstead vs SimpliSafe: pro install vs DIY, monitoring quality, pricing, and features compared. Which system fits your needs in 2026?",
     hero: {
       eyebrow: "Halstead vs SimpliSafe",
       title: "Halstead vs SimpliSafe",
@@ -408,7 +408,7 @@ export const COMPARISONS: Record<string, Comparison> = {
     competitor: "Vivint",
     metaTitle: "Halstead vs Vivint: Smart Home Security Comparison 2026",
     metaDescription:
-      "Halstead vs Vivint: contract length, smart home integration, professional install, and monthly cost compared. See which security platform actually fits how families live in 2026.",
+      "Halstead vs Vivint: contract length, smart home features, professional install, and cost compared. See which platform fits in 2026.",
     hero: {
       eyebrow: "Halstead vs Vivint",
       title: "Halstead vs Vivint",

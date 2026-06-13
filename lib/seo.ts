@@ -12,7 +12,6 @@ export const SITE = {
     "Professional home security, installed by a local technician, monitored by smart software. No 36-month contracts. Real cameras, real installation, real support.",
   twitter: "@halsteadsecurity",
   email: "hello@halsteadsecurity.com",
-  phone: "+1-361-555-0100",
   address: {
     streetAddress: "Corpus Christi",
     addressLocality: "Corpus Christi",
@@ -42,7 +41,6 @@ export const ORGANIZATION_SCHEMA = {
   foundingDate: SITE.founded,
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: SITE.phone,
     contactType: "customer service",
     email: SITE.email,
     availableLanguage: ["English", "Spanish"],
@@ -52,9 +50,7 @@ export const ORGANIZATION_SCHEMA = {
     "@type": "PostalAddress",
     ...SITE.address,
   },
-  sameAs: [
-    // Add social profiles as they come online
-  ],
+  sameAs: [],
 };
 
 export const LOCAL_BUSINESS_SCHEMA = {
@@ -64,7 +60,6 @@ export const LOCAL_BUSINESS_SCHEMA = {
   image: `${SITE.url}/og.png`,
   "@id": SITE.url,
   url: SITE.url,
-  telephone: SITE.phone,
   email: SITE.email,
   priceRange: "$30 - $75 per month",
   address: {

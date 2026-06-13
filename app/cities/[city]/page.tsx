@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { ArrowRight, MapPin, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { generateBreadcrumbSchema, generateFaqSchema, SITE } from "@/lib/seo";
 import type { Metadata } from "next";
@@ -203,13 +203,12 @@ export default async function CityPage({
                 Get a Free Quote
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
-              <a
-                href={`tel:${SITE.phone}`}
+              <Link
+                href="/plans"
                 className="btn-secondary btn-large"
               >
-                <Phone className="mr-2 h-4 w-4" />
-                Call Now
-              </a>
+                See Plans & Pricing
+              </Link>
             </div>
 
             {data.serviceStatus !== "active" && (

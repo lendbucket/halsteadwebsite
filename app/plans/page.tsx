@@ -5,9 +5,9 @@ import { generateProductSchema, generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Plans & Pricing: Home Security from $30/month",
+  title: "Plans & Pricing from $30/mo",
   description:
-    "Halstead Security plans start at $30/month. No 36-month contracts. Compare Basic ($30), Premium ($50), and Pro Monitoring ($75). Hardware kits from $399. 0% financing through Reyna Title.",
+    "Halstead plans start at $30/mo. Compare Basic ($30), Premium ($50), and Pro Monitoring ($75). No 36-month contracts. Hardware from $399.",
   alternates: { canonical: "/plans" },
 };
 

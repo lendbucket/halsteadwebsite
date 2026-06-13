@@ -5,14 +5,14 @@ import { generateFaqSchema } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Become a Halstead Dealer | $15K Founding Territory",
+  title: "Become a Dealer | $15K Territory",
   description:
-    "Own a Halstead Security territory in your city. Founding dealer fee: $15,000 one-time. Includes brand license, software platform, state licensing wizard, training, and 90-day support. First 25 dealers only.",
+    "Own a Halstead Security territory. $15,000 founding fee includes brand license, software, licensing wizard, training, and 90-day support.",
   alternates: { canonical: "/dealer" },
   openGraph: {
-    title: "Own a Halstead Security Territory | $15K Founding Offer",
+    title: "Own a Halstead Security Territory",
     description:
-      "Run your own security business under a brand customers trust. Software, training, and back-office included. First 25 dealers locked at the founding rate.",
+      "Run your own security business under a brand customers trust. Software, training, and back-office included.",
   },
 };
 

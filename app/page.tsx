@@ -16,9 +16,11 @@ import { generateFaqSchema, SITE } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Halstead Security | Home Security, Locally Installed",
+  title: {
+    absolute: "Halstead Security | Home Security, Locally Installed",
+  },
   description:
-    "Real cameras, professionally installed by a local technician. No 36-month contracts. Plans from $30/month with smart AI alerts, mobile app, and optional 24/7 professional monitoring. Free quote in minutes.",
+    "Professionally installed home security from $30/mo. No 36-month contracts. Smart AI alerts, mobile app, optional 24/7 monitoring. Free quote.",
   alternates: { canonical: "/" },
 };
 
@@ -369,13 +371,12 @@ export default function HomePage() {
               Get a Free Quote
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Link>
-            <a
-              href={`tel:${SITE.phone}`}
+            <Link
+              href="/plans"
               className="inline-flex items-center justify-center rounded-lg border-2 border-cream/30 px-8 py-4 text-base font-semibold text-cream transition-all hover:border-cream hover:bg-cream/10"
             >
-              <Phone className="mr-2 h-4 w-4" />
-              Call (361) 555-0100
-            </a>
+              See Plans & Pricing
+            </Link>
           </div>
         </div>
       </section>
