@@ -5,26 +5,18 @@
  * to maximize search engine visibility and social sharing quality.
  */
 
+import { siteConfig } from "./config";
+
 export const SITE = {
-  name: "Halstead Security",
-  url: "https://halsteadsecurity.com",
-  description:
-    "Professional home security, installed by a local technician, monitored by smart software. No 36-month contracts. Real cameras, real installation, real support.",
-  twitter: "@halsteadsecurity",
-  email: "hello@halsteadsecurity.com",
-  address: {
-    streetAddress: "Corpus Christi",
-    addressLocality: "Corpus Christi",
-    addressRegion: "TX",
-    postalCode: "78401",
-    addressCountry: "US",
-  },
-  founder: "Robert Reyna",
-  founded: "2026",
-  brand: {
-    primary: "#0F1B2D",
-    accent: "#C9A547",
-  },
+  name: siteConfig.name,
+  url: siteConfig.url,
+  description: siteConfig.description,
+  twitter: siteConfig.twitter,
+  email: siteConfig.contact.email,
+  address: siteConfig.address,
+  founder: siteConfig.founder,
+  founded: siteConfig.founded,
+  brand: siteConfig.brand,
 };
 
 export const ORGANIZATION_SCHEMA = {

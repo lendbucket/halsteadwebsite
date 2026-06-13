@@ -4,15 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X, ShieldCheck, ArrowRight } from "lucide-react";
+import { siteConfig } from "@/lib/config";
 
-const navLinks = [
-  { href: "/solutions", label: "Solutions" },
-  { href: "/features", label: "Features" },
-  { href: "/plans", label: "Plans" },
-  { href: "/compare", label: "Compare" },
-  { href: "/dealer", label: "Become a Dealer" },
-  { href: "/resources", label: "Resources" },
-];
+const navLinks = siteConfig.nav.main;
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -67,7 +61,7 @@ export function Header() {
           {navLinks.map((link) => {
             const isActive =
               pathname === link.href ||
-              (link.href !== "/" && pathname.startsWith(link.href));
+              pathname.startsWith(link.href);
             return (
               <Link
                 key={link.href}
@@ -116,7 +110,7 @@ export function Header() {
             {navLinks.map((link) => {
               const isActive =
                 pathname === link.href ||
-                (link.href !== "/" && pathname.startsWith(link.href));
+                pathname.startsWith(link.href);
               return (
                 <Link
                   key={link.href}
