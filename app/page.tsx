@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { SecurityDisclaimer } from "@/components/SecurityDisclaimer";
+import { AnimateIn } from "@/components/AnimateIn";
 import { generateFaqSchema, SITE } from "@/lib/seo";
 import type { Metadata } from "next";
 
@@ -118,7 +119,7 @@ export default function HomePage() {
 
       {/* Three pillars */}
       <section className="bg-cream py-20 md:py-28">
-        <div className="container-wide">
+        <AnimateIn className="container-wide">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <p className="eyebrow">Why Halstead Security</p>
             <h2 className="heading-section mt-3 text-balance">
@@ -148,12 +149,12 @@ export default function HomePage() {
               description="When you call Halstead, a real person picks up. Your local Halstead team handles installation, support, and service. No offshore call center."
             />
           </div>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* What you get */}
       <section className="relative overflow-hidden bg-navy py-24 text-cream">
-        <div className="container-wide">
+        <AnimateIn className="container-wide">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-gold">
@@ -200,12 +201,12 @@ export default function HomePage() {
               ))}
             </ul>
           </div>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Plans teaser */}
       <section className="bg-cream py-20 md:py-28">
-        <div className="container-wide">
+        <AnimateIn className="container-wide">
           <div className="mx-auto mb-14 max-w-2xl text-center">
             <p className="eyebrow">Plans &amp; Pricing</p>
             <h2 className="heading-section mt-3 text-balance">
@@ -245,12 +246,12 @@ export default function HomePage() {
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* How it works */}
       <section className="bg-cream-200 py-20 md:py-28">
-        <div className="container-wide">
+        <AnimateIn className="container-wide">
           <div className="mx-auto mb-16 max-w-2xl text-center">
             <p className="eyebrow">How Halstead works</p>
             <h2 className="heading-section mt-3">
@@ -280,7 +281,7 @@ export default function HomePage() {
               description="Your home is now protected. Smart alerts. Cloud video. Local support. 24/7 monitoring optional."
             />
           </div>
-        </div>
+        </AnimateIn>
       </section>
 
       {/* Dealer CTA */}
