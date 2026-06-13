@@ -14,11 +14,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-cream text-navy;
     font-feature-settings: "ss01", "ss02", "cv11";
+    overflow-x: hidden;
+    min-height: 100dvh;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 
   ::selection {
@@ -42,19 +46,19 @@
 
   /* Buttons */
   .btn-primary {
-    @apply inline-flex items-center justify-center rounded-lg bg-navy px-6 py-3.5 text-sm font-semibold text-cream transition-all hover:bg-navy-700 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-lg bg-navy px-6 py-3.5 text-sm font-semibold text-cream transition-all hover:bg-navy-700 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0;
   }
 
   .btn-gold {
-    @apply inline-flex items-center justify-center rounded-lg bg-gold px-6 py-3.5 text-sm font-semibold text-navy transition-all hover:bg-gold-600 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-lg bg-gold px-6 py-3.5 text-sm font-semibold text-navy transition-all hover:bg-gold-600 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-lg border-2 border-navy bg-transparent px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-navy hover:text-cream;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-lg border-2 border-navy bg-transparent px-6 py-3 text-sm font-semibold text-navy transition-all hover:bg-navy hover:text-cream;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold text-navy transition-colors hover:bg-navy/5;
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-lg px-4 py-2 text-sm font-semibold text-navy transition-colors hover:bg-navy/5;
   }
 
   .btn-large {
