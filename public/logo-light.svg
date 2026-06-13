@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 40" fill="none">
+  <!-- Shield mark -->
+  <g>
+    <!-- Shield body -->
+    <path d="M20 2L4 8v12c0 10.67 6.84 20.63 16 24 9.16-3.37 16-13.33 16-24V8L20 2z" fill="#C9A547"/>
+    <!-- Checkmark -->
+    <path d="M14 20l4 4 8-8" stroke="#F4F1EA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="48" y="29" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.02em" fill="#F4F1EA">HALSTEAD</text>
+  <!-- Descriptor -->
+  <text x="48" y="14" font-family="Inter, system-ui, sans-serif" font-size="7" font-weight="600" letter-spacing="0.15em" fill="#C9A547">SECURITY</text>
+</svg>
