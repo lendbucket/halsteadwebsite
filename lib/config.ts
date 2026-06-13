@@ -42,6 +42,7 @@ export const siteConfig = {
       { href: "/plans", label: "Plans" },
       { href: "/compare", label: "Compare" },
       { href: "/dealer", label: "Become a Dealer" },
+      { href: "/territories", label: "Own a Territory" },
       { href: "/resources", label: "Resources" },
     ],
     cta: { href: "/contact", label: "Get a Free Quote" },
@@ -67,6 +68,7 @@ export const siteConfig = {
       { href: "/dealer", label: "Become a Dealer" },
       { href: "/dealer/faq", label: "Dealer FAQ" },
       { href: "/dealer/apply", label: "Apply Now" },
+      { href: "/territories", label: "Own a Territory" },
       { href: "/white-label", label: "White-Label" },
     ],
     areas: [

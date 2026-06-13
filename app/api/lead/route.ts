@@ -29,7 +29,9 @@ export async function POST(req: Request) {
       const resend = new Resend(process.env.RESEND_API_KEY);
 
       const subject =
-        data.type === "dealer-application"
+        data.type === "territory-license"
+          ? `New territory license inquiry: ${data.name} (${data.location || "unknown"})`
+          : data.type === "dealer-application"
           ? `Dealer application: ${data.name} (${data.location || "unknown"})`
           : `New ${data.type || "lead"}: ${data.name}`;
 
